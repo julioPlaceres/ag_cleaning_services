@@ -1,0 +1,9 @@
+.services-background{
+    background-color: brown;
+}
+
+div.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,9 @@
+.main-img {
+  background-image: url("../images/profile\ picture.jpg");
+  background-size: cover;
+}
+
+/* This sets the Image Tag to hide for the background image to display */
+.main-img-holder {
+  visibility: hidden;
+}

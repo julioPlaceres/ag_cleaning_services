@@ -1,0 +1,10 @@
+/* for smaller devices */
+.small-font {
+  font-size: x-small;
+}
+
+/* to prevent icons from turning blue */
+.link-icons {
+  text-decoration: none;
+  color: palevioletred;
+}

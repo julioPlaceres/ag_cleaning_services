@@ -1,0 +1,10 @@
+.icon {
+  width: 35px;
+}
+
+@media (min-width: 768px) {
+  .icon-row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
