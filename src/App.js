@@ -27,6 +27,9 @@ function App() {
               <Route path="*" element={<NotFound />} />
             </Routes>
           </header>
+          <footer>
+            <ContactFooter/>
+          </footer>
         </section>
       </Router>
   );

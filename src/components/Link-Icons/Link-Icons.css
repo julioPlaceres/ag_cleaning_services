@@ -6,5 +6,11 @@
 /* to prevent icons from turning blue */
 .link-icons {
   text-decoration: none;
-  color: palevioletred;
+  color: rgb(17, 101, 180);
+}
+
+.link-icons-altern {
+  text-decoration: none;
+  color: lightseagreen;
+  font-weight: bold;
 }

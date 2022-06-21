@@ -3,7 +3,7 @@ import { AiFillYoutube } from "react-icons/ai";
 
 const Youtube = () => {
   return (
-    <a target="_bank" href="" className="link-icons">
+    <a target="_bank" href="" className="link-icons-altern">
       <AiFillYoutube />
     </a>
   );

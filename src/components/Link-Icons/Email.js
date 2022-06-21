@@ -5,7 +5,7 @@ const Email = () => {
   return (
     <a
       href="mailto:agarcia@gmail.com"
-      className="gap-3 link-icons"
+      className="gap-3 link-icons-altern"
     >
       <MdEmail />
       <small className="small-font m-1">

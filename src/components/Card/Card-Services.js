@@ -6,9 +6,9 @@ const CardServices = (props) => {
 <Card border="light" style={{ width: "20rem", borderRadius: "50px", maxHeight: "600px"}} className="mx-auto"> 
     
     <Card.Img variant="top" 
-    src={"holder.js/100px180"} 
+    src={props.src} 
     alt="card image" 
-    style={{maxWidth: "100px"}} 
+    style={{maxWidth: "300px"}} 
     className="mx-auto"/>
       
       <Card.Body>

@@ -3,7 +3,7 @@ import { AiFillInstagram } from "react-icons/ai";
 
 const Instagram = () => {
   return (
-    <a className="link-icons" target="_bank" href="">
+    <a className="link-icons-altern" target="_bank" href="">
       <AiFillInstagram />
     </a>
   );
