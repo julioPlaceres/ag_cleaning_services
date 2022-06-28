@@ -7,9 +7,13 @@ function Contact() {
   return (
     <>
       <AppointmentCall />
-
+        <Row className="mt-4" style={{ textAlign: "center" }}>
+          <Col>
+            <p>Book an appointment with us online</p>
+            <Button variant="success">Book now</Button>
+          </Col>
+        </Row>
       <AppointmentOnline />
-
       <Locations />
     </>
   );
