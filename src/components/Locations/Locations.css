@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.locations{
+    font-size: x-small;
+}
