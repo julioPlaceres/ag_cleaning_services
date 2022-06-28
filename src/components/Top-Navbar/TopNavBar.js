@@ -10,7 +10,7 @@ import "./TopNavBar.css";
 
 const TopNavBar = () => {
   return (
-    <Container fluid className="bg-light">
+    <Container fluid>
       <Row className="icon-row">
         <Col xs={6} md={3} lg={3} className="phone">
           <PhoneIcon />
@@ -25,7 +25,7 @@ const TopNavBar = () => {
         </Col>
 
         <Col xs={3} className="twitter icon">
-          <Twitter className={"size: 42px"}/>
+          <Twitter className={"size: 42px"} />
         </Col>
 
         <Col xs={2} className="instagram icon">
