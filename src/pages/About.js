@@ -10,7 +10,7 @@ function About() {
         <h1 className="mt-3" style={{ textAlign: "center" }}>
           About AG Organizing and Cleaning Services
         </h1>
-
+        
         <Row className="mt-3">
           <Col className="mt-2" style={{ textAlign: "center" }}>
             <p>
