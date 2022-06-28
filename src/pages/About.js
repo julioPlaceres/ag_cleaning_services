@@ -8,7 +8,13 @@ import "./Pages.css";
 function About() {
     return (
       <>
-      <h1>About Page</h1>
+      <Container fluid style={{ background: "lightblue" }}>
+      <h1>About AG Organizing and Cleaning Services</h1>
+      </Container>
+      <Row className="mt-4 container">
+        <Col style={{ textAlign: "center" }}>
+        </Col>
+      </Row>
       </>
     );
   }
