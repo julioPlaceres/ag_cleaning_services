@@ -18,7 +18,7 @@ function Contact() {
 
         <Row className="mt-4" style={{ textAlign: "center" }}>
           <Col>
-            <p>Book an appoinment with us online</p>
+            <p>Book an appointment with us online</p>
             <Button variant="success">Book now</Button>
           </Col>
         </Row>
