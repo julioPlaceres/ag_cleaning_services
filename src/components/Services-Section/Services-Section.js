@@ -8,7 +8,7 @@ import painting03 from "../images/Cleaning03.jpg";
 const ServicesSection = () => {
   return (
     <Container className="d-flex justify-content-center">
-      <h6 style={{color: "rgb(17, 101, 180)"}} className="col-sm-12 col-md-12 col-lg-12 mb-5 mt-5">What better than the fresh scent of a clean house!</h6>
+      <h6 style={{color: "black"}} className="col-sm-12 col-md-12 col-lg-12 mb-5 mt-5 intro">What better than the fresh scent of a clean house!</h6>
 
       <CardServices title="Residential Cleaning"
       text="Feeling tired from a long day at work? Having visit and too busy preparing everything? let us do the cleaning. Not only 
