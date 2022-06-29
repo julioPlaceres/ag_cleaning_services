@@ -11,7 +11,7 @@ const OperationHours = () => {
       </Row>
 
       <Row className="sepration-lines">
-        <hr style={{ width: "50%", color: "green", height: "2px" }} />
+        <hr style={{ width: "45%", color: "green", height: "2px" }} />
       </Row>
 
       <Row className="container">
