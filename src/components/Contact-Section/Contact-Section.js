@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 const ContactSection = () => {
   return (
     <Container fluid style={{ background: "lightgray" }}>
-      <Row className="titles container">
+      <Row>
         <h6 className="mt-3">AG Organizing &amp; Cleaning Services LLC</h6>
       </Row>
 

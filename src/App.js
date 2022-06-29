@@ -12,26 +12,26 @@ import ContactFooter from "./components/Contact-Section/Contact-Section";
 
 function App() {
   return (
-      <Router>
-        <section>
-          <header>
-            <TopNagivation />
-            <Navigation />
-            <Routes>
-              <Route path="/" element={<Home />}/>
-              <Route path="/home" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/reviews" element={<Reviews />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </header>
-          <footer>
-            <ContactFooter/>
-          </footer>
-        </section>
-      </Router>
+    <Router>
+      <section>
+        <header>
+          <TopNagivation />
+          <Navigation />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/reviews" element={<Reviews />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </header>
+        <footer>
+          <ContactFooter />
+        </footer>
+      </section>
+    </Router>
   );
 }
 

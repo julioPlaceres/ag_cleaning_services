@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 const OperationHours = () => {
   return (
     <Container fluid style={{ background: "lightgray" }}>
-      <Row className="titles container">
+      <Row>
         <p>Hours of Operation</p>
       </Row>
 
@@ -14,7 +14,7 @@ const OperationHours = () => {
         <hr style={{ width: "45%", color: "green", height: "2px" }} />
       </Row>
 
-      <Row className="container">
+      <Row className="">
         <Table borderless>
           <tr>
             <td>Sunday</td>
