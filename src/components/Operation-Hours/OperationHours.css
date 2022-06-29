@@ -9,10 +9,13 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
+    margin-left: 17rem;
 }
 
 .titles{
-    text-align: center;
+    text-align: center; 
+    margin-left: 11.5rem;
 }
 
 .sepration-lines{
