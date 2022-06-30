@@ -6,10 +6,7 @@ import "./Pages.css";
 function About() {
   return (
     <>
-      <Container
-        fluid
-        style={{ background: "lightblue", border: "10px solid beige" }}
-      >
+      <Container  className="mb-5" fluid style={{ background: "lightblue", border: "10px solid beige" }} >
         <h1 className="mt-3" style={{ textAlign: "center" }}>
           About AG Organizing and Cleaning Services
         </h1>
@@ -21,7 +18,7 @@ function About() {
               founded in 2022 with the mission of providing excellent cleaning
               services in the Syracuse, New York area. We offer service
               packages, including deep cleaning, regular cleaning, moving day
-              cleaning, parties/events, closet organization and more. You can
+              cleaning, after parties/events, closet organization and more. You can
               find a complete list of everything we offer, including special
               discounts on our services page.
             </p>
