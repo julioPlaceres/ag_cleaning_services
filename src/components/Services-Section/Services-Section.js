@@ -3,11 +3,18 @@ import CardServices from "../Card/Card-Services";
 import painting01 from "../images/Cleaning01.jpg";
 import painting02 from "../images/Cleaning02.jpg";
 import painting03 from "../images/Cleaning03.jpg";
+import { Container, Row } from "react-bootstrap";
 
 const ServicesSection = () => {
+
+  function btnAction(){
+    console.log("Button Click")
+  }
+
   return (
     <>
-      <h6 style={{ color: "black" }} className="col-sm-12 col-md-12 col-lg-12 mb-5 mt-5 intro">
+      <h6 className="col-sm-12 col-md-12 col-lg-12 mb-5 mt-5 intro"
+      >
         What better than the fresh scent of a clean house!
       </h6>
 

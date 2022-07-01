@@ -7,3 +7,7 @@ div.container{
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.card-services{
+    margin-bottom: 10px;
+}

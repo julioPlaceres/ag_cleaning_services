@@ -5,11 +5,8 @@ import Row from "react-bootstrap/Row";
 
 const ContactSection = () => {
   return (
-    <Container fluid style={{ background: "lightgray" }}>
-      <Row>
-        <h6 className="mt-3">AG Organizing &amp; Cleaning Services LLC</h6>
-      </Row>
-
+    <Container fluid className="mt-5 text-center">
+      <h6>AG Organizing &amp; Cleaning Services LLC</h6>
       <OperationHours />
     </Container>
   );
