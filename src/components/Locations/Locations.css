@@ -1,4 +1,4 @@
-.container{
+.main-container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -6,5 +6,23 @@
 }
 
 .locations{
-    font-size: x-small;
+    font-size: 3.5vw
+}
+
+.area-header{
+    font-size: small;
+    text-align: center;
+}
+
+/* Media Queries to prevent font size keeps from shrinking or oversizing */
+@media only screen and (max-width: 380px) {
+    .locations {
+      font-size: xx-small;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .locations {
+      font-size: large;
+    }
 }

@@ -2,8 +2,6 @@
   width: 40px;
 }
 
-
-
 @media (min-width: 768px) {
   .icon-row {
     display: flex;
