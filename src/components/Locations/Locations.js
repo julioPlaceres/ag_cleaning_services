@@ -6,8 +6,9 @@ import "./Locations.css";
 function Locations() {
   return (
     <>
-      <Container className="mt-4 container">
+      <Container fluid className="mt-4">
         <Row className="locations">
+          <p className="area-header">Area we services</p>
           <Col>
             <ul>
               <li>Liverpool, NY</li>

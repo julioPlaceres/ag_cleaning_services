@@ -7,7 +7,7 @@ import "./Appointment.css";
 function Appoinment() {
   return (
     <>
-      <Container className="mt-4 container">
+      <Container fluid>
         <Row className="mt-4" style={{ textAlign: "center" }}>
           <Col>
             <p>Book an appoinment with us online</p>

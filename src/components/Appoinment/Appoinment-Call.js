@@ -7,7 +7,7 @@ import "./Appointment.css";
 function AppoinmentCall() {
   return (
     <>
-      <Container className="mt-4 container">
+      <Container fluid>
         <Row>
           <Col style={{ textAlign: "center" }}>
             <h6>We are just one call away</h6>
