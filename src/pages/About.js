@@ -6,14 +6,15 @@ import "./Pages.css";
 function About() {
   return (
     <>
-      <Container  className="mb-5" fluid style={{ background: "lightblue", border: "10px solid beige" }} >
+      <Container fluid style={{ background: "lightblue", border: "10px solid beige" }} >
         <h1 className="mt-3" style={{ textAlign: "center" }}>
           About AG Organizing and Cleaning Services
         </h1>
-
-        <Row className="mt-3">
-          <Col className="mt-2" style={{ textAlign: "center" }}>
-            <p>
+        </Container>
+      <Container className="mt-5" fluid style={{ background: "lightgray", marginBottom:"5%"}}>
+        <Row>
+          <Col>
+            <p className="mt-3" style={{textAlign: "center" }}>
               Family owned and operated, AG Organizing and Cleaning Services was
               founded in 2022 with the mission of providing excellent cleaning
               services in the Syracuse, New York area. We offer service
@@ -24,7 +25,8 @@ function About() {
             </p>
           </Col>
         </Row>
-      </Container>
+        </Container>
+       
     </>
   );
 }
