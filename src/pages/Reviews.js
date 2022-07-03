@@ -1,10 +1,11 @@
+import ReviewForm from "../components/Review-Form/ReviewForm";
+
 function Reviews() {
-    return (
-      <>
-      <h1>Reviews Page</h1>
-      </>
-    );
-  }
-  
-  export default Reviews;
-  
+  return (
+    <>
+      <ReviewForm />
+    </>
+  );
+}
+
+export default Reviews;
