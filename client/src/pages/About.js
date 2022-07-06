@@ -11,7 +11,7 @@ function About() {
           About AG Organizing and Cleaning Services
         </h1>
         </Container>
-      <Container className="mt-5" fluid style={{ background: "lightgray", marginBottom:"5%"}}>
+      <Container className="mt-5" fluid style={{ background: "beige", marginLeft: "1%", marginRight:"1%", marginBottom: "5%", border: "lightblue 3px solid"}}>
         <Row>
           <Col>
             <p className="mt-3" style={{textAlign: "center" }}>
