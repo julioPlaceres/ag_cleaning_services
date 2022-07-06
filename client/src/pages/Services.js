@@ -5,11 +5,11 @@ function Services() {
       <>
 
 
-      <h2 style={{margin: "5%", background: "teal", color: "white", padding: "5%" }}>Let us help make your home like new again.</h2>
+      <h2 style={{margin: "5%", background: "#1BBC9B", color: "white", padding: "5%" }}>Let us help make your home like new again.</h2>
       <h4 style={{margin: "5%"}}>Here's a comprehensive list of what we offer:</h4>
       <p>
         
-        <Container className="services-list" style={{border: "3px solid teal", background: "lightgray", fontSize: "24px", font: "Calibri bold", margin: "0%", padding: "5%" }}>
+        <Container className="services-list" style={{border: "3px solid #1BBC9B", background: "lightgray", fontSize: "24px", font: "Calibri bold", margin: "0%", padding: "5%" }}>
         <ul>
         <li>Standard full area cleaning</li>
         <li>Deep cleaning of rooms, including garages. </li>
