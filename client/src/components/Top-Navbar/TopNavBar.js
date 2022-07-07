@@ -10,9 +10,9 @@ import "./TopNavBar.css";
 
 const TopNavBar = () => {
   return (
-    <Container fluid>
+    <Container className="background" fluid>
       <Row className="icon-row">
-        <Col xs={6} md={3} lg={3} className="phone">
+        <Col xs={6} md={3} lg={2} className="phone">
           <PhoneIcon />
         </Col>
 
