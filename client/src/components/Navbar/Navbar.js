@@ -3,7 +3,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 function Navigation() {
   return (
     <>
-      <Navbar expand="lg">
+      <Navbar expand="lg" className="animate-nav">
         <Navbar.Brand href="/home">
           {/* Show Logo on Navbar only if not on Home Page */}
           {/* <img src={Logo} width="100" height="70" /> */}
