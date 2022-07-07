@@ -3,8 +3,6 @@ import { Container } from "react-bootstrap";
 function Services() {
     return (
       <>
-
-
       <h2 style={{margin: "5%", background: "#1BBC9B", color: "white", padding: "5%" }}>Let us help make your home like new again.</h2>
       <h4 style={{margin: "5%"}}>Here's a comprehensive list of what we offer:</h4>
       <p>
@@ -34,4 +32,3 @@ function Services() {
   }
   
   export default Services;
-  
