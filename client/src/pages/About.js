@@ -6,12 +6,12 @@ import "./Pages.css";
 function About() {
   return (
     <>
-      <Container fluid style={{ background: "lightblue", border: "10px solid beige" }} >
-        <h1 className="mt-3" style={{ textAlign: "center" }}>
+      <Container fluid style={{ background: "#1BBC9B", padding: "4%" }} >
+        <h1 className="mt-3" style={{ textAlign: "center", color: "white" }}>
           About AG Organizing and Cleaning Services
         </h1>
         </Container>
-      <Container className="mt-5" fluid style={{ background: "beige", marginLeft: "1%", marginRight:"1%", marginBottom: "5%", border: "lightblue 3px solid"}}>
+      <Container className="mt-5" fluid style={{ background: "lightgray", marginLeft: "1%", marginRight:"1%", marginBottom: "5%", border: "3px solid #1BBC9B" }}>
         <Row>
           <Col>
             <p className="mt-3" style={{textAlign: "center" }}>
