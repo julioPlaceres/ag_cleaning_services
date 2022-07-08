@@ -6,15 +6,13 @@ import painting03 from "../images/Cleaning03.jpg";
 import { Container, Row } from "react-bootstrap";
 
 const ServicesSection = () => {
-
-  function btnAction(){
-    console.log("Button Click")
+  function btnAction() {
+    console.log("Button Click");
   }
 
   return (
     <>
-      <h6 className="col-sm-12 col-md-12 col-lg-12 mb-5 mt-5 intro"
-      >
+      <h6 className="col-sm-12 col-md-12 col-lg-12 mb-5 mt-5">
         What better than the fresh scent of a clean house!
       </h6>
 
