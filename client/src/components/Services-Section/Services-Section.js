@@ -12,7 +12,7 @@ const ServicesSection = () => {
 
   return (
     <>
-      <h6 className="col-sm-12 col-md-12 col-lg-12 mb-5 mt-5">
+      <h6 className="  mb-5 mt-5">
         What better than the fresh scent of a clean house!
       </h6>
 
