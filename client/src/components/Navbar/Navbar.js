@@ -1,5 +1,6 @@
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 
+// To what are those classes link to?
 function Navigation() {
   return (
     <>
