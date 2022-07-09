@@ -1,8 +1,19 @@
 :root {
-    --blue: #1e90ff;
-    --white: #ffffff;
-    --roseGold: #b76e79;
-    --card-back-light: url("../images/heroImg.jpg");
-    --card-back-dark: url("../images/2022-03-03.jpg");
-  }
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --roseGold: #b76e79;
+  --card-back-light: url("../images/heroImg.jpg");
+  --card-back-dark: url("../images/2022-03-03.jpg");
+}
 
+/* Card styling*/
+.mx-auto {
+  box-shadow: 5px 5px 20px rgb(130, 129, 129);
+  display: flex;
+}
+
+.mx-auto:hover {
+  transform: scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
