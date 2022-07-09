@@ -7,10 +7,9 @@ const CardServices = (props) => {
       <Card
         border="light"
         style={{
-          maxWidth: "19rem",
+          maxWidth: "20rem",
           borderRadius: "10px",
           maxHeight: "600px",
-          height: "auto",
         }}
         className="mx-auto"
       >

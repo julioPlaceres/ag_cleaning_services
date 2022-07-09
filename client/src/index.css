@@ -15,6 +15,17 @@ body {
   padding-top: 20px;
   background-color: lightgrey;
 }
+.styling {
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 250ms;
+  font-size: 20px;
+}
+
+.styling:hover {
+  background-color: #37e2d5;
+  transform: translateY(-10px);
+  text-decoration: none;
+}
 
 /* Card styling*/
 .phone {
