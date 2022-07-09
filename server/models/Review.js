@@ -1,37 +1,24 @@
-const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../config/connection");
+const mongoose = require("mongoose");
 
-// Create a new Sequelize model for the Reviews
-class Reviews extends Model {}
+const { Schema } = mongoose;
 
-Reviews.init(
-  // Define fields/columns on model
-  {
-    review_id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    name: {
-      type: DataTypes.STRING,
-    },
-    review_text: {
-      type: DataTypes.STRING,
-    },
-    review_date: {
-      type: DataTypes.DATE,
-    },
+const reviewSchema = new Schema({
+  review_name: {
+    type: String,
+    required: true,
+    trim: true,
   },
-  {
-    // Link to database connection
-    sequelize,
-    // Set to false to remove `created_at` and `updated_at` fields
-    timestamps: false,
-    // Prevent sequelize from renaming the table
-    freezeTableName: true,
-    underscored: true,
-    modelName: "reviews",
-  }
-);
+  review_text: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+  review_date: {
+    type: Date,
+    default: Date.now,
+  },
+});
+
+const Reviews = mongoose.model("Reviews", reviewSchema);
 
 module.exports = Reviews;

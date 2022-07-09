@@ -2,20 +2,26 @@ const router = require("express").Router();
 const Review = require("../../models/Review");
 
 // GET all Reviews
-router.get("/", async (req, res) => {
-  const reviewData = await Review.findAll().catch((err) => {
-    res.json(err);
-  });
-  res.json(reviewData);
-  console.log(reviewData);
+router.get("/", (req, res) => {
+  Review.find({})
+    .sort({ review_date: -1 })
+    .then((dbReview) => {
+      res.json(dbReview);
+    })
+    .catch((err) => {
+      res.status(400).json(err);
+    });
 });
 
 // CREATE a Review
-router.post("/", async (req, res) => {
-  const reviewData = await Review.create(req.body).catch((err) => {
-    res.json(err);
-  });
-  res.json(reviewData);
+router.post("/", ({ body }, res) => {
+  Review.create(body)
+    .then((dbReview) => {
+      res.json(dbReview);
+    })
+    .catch((err) => {
+      res.status(400).json(err);
+    });
 });
 
 module.exports = router;
