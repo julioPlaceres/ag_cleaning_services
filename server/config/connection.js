@@ -1,17 +1,11 @@
-const Sequelize = require('sequelize');
+const mongoose = require("mongoose");
 
-// Enable access to .env variables
-require('dotenv').config();
-
-const sequelize = new Sequelize(
-  process.env.DB_NAME,
-  process.env.DB_USER,
-  process.env.DB_PASSWORD,
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/ag-cleaning-services",
   {
-    host: 'localhost',
-    dialect: 'mysql',
-    port: 3306
+    useNewUrlParser: true,
+    useUnifiedTopology: true
   }
 );
 
-module.exports = sequelize;
+module.exports = mongoose.connection;

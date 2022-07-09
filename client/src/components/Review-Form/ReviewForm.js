@@ -1,13 +1,10 @@
 import "./ReviewForm.css";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import axios from "axios";
 
 const ReviewForm = () => {
-  // State variables for the fields in the form
-  // Initial values will be empty string
   const [username, setUsername] = useState("");
   const [reviewText, setRewviewText] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -49,15 +46,17 @@ const ReviewForm = () => {
   };
 
   const postReviews = () => {
-    axios
-      .post("api/reviews", {
-        name: username,
+    const reviewOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        review_name: username,
         review_text: reviewText,
         review_date: new Date(),
-      })
-      .then((res) => {
-        console.log(res);
-      })
+      }),
+    };
+    fetch("api/reviews", reviewOptions)
+      .then((response) => response.json())
       .catch((err) => {
         console.log(err);
       });

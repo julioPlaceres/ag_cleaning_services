@@ -5,7 +5,7 @@ const ReviewCard = (props) => {
   return (
     <Container fluid className="mb-4">
       <Card>
-        <Card.Header>{props.name}</Card.Header>
+        <Card.Header>{props.review_name}</Card.Header>
         <Card.Body>
           <blockquote className="blockquote mb-0">
             <p> {props.review_text} </p>

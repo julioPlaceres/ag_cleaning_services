@@ -1,7 +1,9 @@
 // Import and require express and mysql2
 const express = require("express");
 const routes = require("./routes");
-const sequelize = require("./config/connection");
+const db = require("./config/connection");
+const path = require("path");
+const logger = require("morgan");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -10,10 +12,14 @@ const PORT = process.env.PORT || 3001;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use(express.static("public"));
+
 // turn on routes
 app.use(routes);
 
-// turn on connection to db and server
-sequelize.sync().then(() => {
-  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// To log out requests
+app.use(logger("dev"));
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}!`);
 });
