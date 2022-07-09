@@ -1,5 +1,10 @@
 .icon {
   width: 40px;
+  font-size: 30px;
+}
+
+.background {
+  background-color: lightgray;
 }
 
 @media (min-width: 768px) {

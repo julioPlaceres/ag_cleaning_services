@@ -12,7 +12,11 @@ const ServicesSection = () => {
 
   return (
     <>
+<<<<<<< HEAD
       <h6 className="col-sm-12 col-md-12 col-lg-12 mb-5 mt-5 intro">
+=======
+      <h6 className="  mb-5 mt-5">
+>>>>>>> cf1e48e49f1e36735a8c7f1c98feb683a25a6db3
         What better than the fresh scent of a clean house!
       </h6>
 

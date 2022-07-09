@@ -1,13 +1,29 @@
-.services-background{
-    background-color: brown;
+.services-background {
+  background-color: brown;
 }
 
-div.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+div.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.card-services{
-    margin-bottom: 10px;
+.card-services {
+  margin-bottom: 10px;
+}
+
+/*Serviece Section Title styling */
+h6 {
+  font-size: 40px;
+  font-family: "Arvo", serif;
+  font-weight: bold;
+  margin-left: 30rem;
+}
+
+/*Media queries Title Styling */
+@media only screen and (max-width: 768px) {
+  h6 {
+    margin-right: 100px;
+    justify-content: flex-start;
+  }
 }
