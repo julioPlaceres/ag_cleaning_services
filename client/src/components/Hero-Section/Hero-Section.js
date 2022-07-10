@@ -1,7 +1,6 @@
 import "./Hero-Section.css";
 import Img1 from "../images/heroImg.jpg";
-import Image from "react-bootstrap/Image";
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
 
 const HeroSection = () => {
   return (

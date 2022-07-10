@@ -3,13 +3,8 @@ import CardServices from "../Card/Card-Services";
 import painting01 from "../images/Cleaning01.jpg";
 import painting02 from "../images/Cleaning02.jpg";
 import painting03 from "../images/Cleaning03.jpg";
-import { Container, Row } from "react-bootstrap";
 
 const ServicesSection = () => {
-  function btnAction() {
-    console.log("Button Click");
-  }
-
   return (
     <>
       <h6 className="  mb-5 mt-5">

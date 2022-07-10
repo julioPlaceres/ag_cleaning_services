@@ -1,11 +1,5 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-// You never imported the About.css that's why
-// your changes are not being taken. Either make the
-// changes on pages.css or link about and delete the
-// import to pages.css
 import "./Pages.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 function About() {
   return (
@@ -20,11 +14,6 @@ function About() {
         fluid
         style={{
           background: "lightgray",
-          // This three margins are causing the page to oversize
-          marginLeft: "1%",
-          marginRight: "1%",
-          marginBottom: "5%",
-          //================================================
           border: "3px solid #1BBC9B",
         }}
       >

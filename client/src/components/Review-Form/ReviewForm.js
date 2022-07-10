@@ -1,8 +1,6 @@
 import "./ReviewForm.css";
 import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
+import { Container, Form, Button } from "react-bootstrap";
 
 const ReviewForm = () => {
   const [username, setUsername] = useState("");
@@ -28,7 +26,7 @@ const ReviewForm = () => {
     e.preventDefault();
 
     // Check values are not empty
-    if (username.trim() == "" || reviewText.trim() == "") {
+    if (username.trim() === "" || reviewText.trim() === "") {
       setErrorMessage("Please do not leave any field in blank");
       alert(errorMessage);
       return;

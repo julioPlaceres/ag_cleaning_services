@@ -1,5 +1,4 @@
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -9,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import Navigation from "./components/Navbar/Navbar";
 import TopNagivation from "./components/Top-Navbar/TopNavBar";
 import ContactFooter from "./components/Contact-Section/Contact-Section";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (

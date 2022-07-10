@@ -1,3 +1,4 @@
+import "./Pages.css";
 import HeroSection from "../components/Hero-Section/Hero-Section";
 import ServicesSection from "../components/Services-Section/Services-Section";
 

@@ -1,6 +1,6 @@
 import "./Contact-Section.css";
+import { Container } from "react-bootstrap";
 import OperationHours from "../Operation-Hours/OperationHours";
-import Container from "react-bootstrap/Container";
 
 const ContactSection = () => {
   return (
