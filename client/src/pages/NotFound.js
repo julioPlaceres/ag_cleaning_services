@@ -1,10 +1,11 @@
+import "./Pages.css";
+
 function NotFound() {
-    return (
-      <>
+  return (
+    <>
       <h1>404 Page</h1>
-      </>
-    );
-  }
-  
-  export default NotFound;
-  
+    </>
+  );
+}
+
+export default NotFound;

@@ -1,3 +1,4 @@
+import "./Navbar.css";
 import { Navbar, Nav } from "react-bootstrap";
 
 // To what are those classes link to?

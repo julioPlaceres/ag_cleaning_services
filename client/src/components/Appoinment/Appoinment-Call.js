@@ -1,8 +1,6 @@
-import Phone from "../Link-Icons/Phone";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import "./Appointment.css";
+import Phone from "../Link-Icons/Phone";
+import { Container, Row, Col } from "react-bootstrap";
 
 function AppoinmentCall() {
   return (

@@ -1,6 +1,6 @@
-import ReviewForm from "../components/Review-Form/ReviewForm";
 import { Container, Row } from "react-bootstrap";
 import AllReviews from "../components/Reviews/AllReviews";
+import ReviewForm from "../components/Review-Form/ReviewForm";
 
 const Reviews = () => {
   return (

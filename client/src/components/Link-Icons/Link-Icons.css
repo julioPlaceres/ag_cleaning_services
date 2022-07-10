@@ -9,6 +9,10 @@
   color: rgb(17, 101, 180);
 }
 
+.size {
+  font-size: 0.8rem;
+}
+
 .link-icons-altern {
   text-decoration: none;
   color: lightseagreen;

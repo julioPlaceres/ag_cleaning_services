@@ -1,7 +1,5 @@
 import "./OperationHours.css";
-import Table from "react-bootstrap/Table";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
+import { Container, Row, Table } from "react-bootstrap";
 
 const OperationHours = () => {
   return (

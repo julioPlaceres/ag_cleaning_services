@@ -1,3 +1,4 @@
+import "./Link-Icons.css";
 import { MdFacebook } from "react-icons/md";
 
 const Facebok = () => {
