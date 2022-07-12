@@ -11,7 +11,7 @@ const Reviews = () => {
       </Row>
 
       <Row>
-        <p className="text-header">See what our customer's say</p>
+        <p className="text-header">See what our customers say</p>
         <AllReviews />
       </Row>
     </Container>
