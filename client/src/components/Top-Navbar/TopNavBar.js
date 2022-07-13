@@ -1,9 +1,9 @@
-import "./TopNavBar.css";
-import EmailIcon from "../Link-Icons/Email";
-import PhoneIcon from "../Link-Icons/Phone";
-import Facebook from "../Link-Icons/Facebook";
-import Instagram from "../Link-Icons/Instagram";
-import { Container, Col, Row } from "react-bootstrap";
+import './TopNavBar.css';
+import EmailIcon from '../Link-Icons/Email';
+import PhoneIcon from '../Link-Icons/Phone';
+import Facebook from '../Link-Icons/Facebook';
+import Instagram from '../Link-Icons/Instagram';
+import { Container, Col, Row } from 'react-bootstrap';
 
 const TopNavBar = () => {
   return (
