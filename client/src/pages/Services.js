@@ -13,7 +13,6 @@ function Services() {
       >
         Let us help make your home like new again.
       </h2>
-
       <h4 style={{ margin: "5%" }}>
         Here's a comprehensive list of our services:
       </h4>
@@ -51,12 +50,11 @@ function Services() {
 
         </Container>
         <p style={{ margin: "2%" }}>
-
           We also offer discount packages for seniors and single mothers as well as
           free estimates on our one-time and/or recurring cleaning either weekly,
-          bi-weekly or monthly.  Click here to request an estimate:
+          bi-weekly or monthly.  Contact us to request an estimate and/or appointment! 
         </p>
-        <Button style={{ backgroundColor: "#1BBC9B" }}>Request an estimate</Button>
+        
       </p>
 
 
