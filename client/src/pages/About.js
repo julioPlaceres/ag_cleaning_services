@@ -13,7 +13,6 @@ function About() {
         className="mt-5"
         fluid
         style={{
-          background: "lightgray",
           border: "3px solid #1BBC9B",
         }}
       >
