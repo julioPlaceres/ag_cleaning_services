@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 
 function Services() {
   return (
@@ -13,12 +13,6 @@ function Services() {
       >
         Let us help make your home like new again.
       </h2>
-      <h4 style={{ margin: "2%" }}>
-        We offer discount packages for seniors and single mothers as well as
-        free estimates on our one-time and/or recurring cleaning either weekly,
-        bi-weekly or monthly
-      </h4>
-
       <h4 style={{ margin: "5%" }}>
         Here's a comprehensive list of our services:
       </h4>
@@ -27,7 +21,6 @@ function Services() {
           className="services-list"
           style={{
             border: "3px solid #1BBC9B",
-            background: "lightgray",
             fontSize: "24px",
             font: "Calibri bold",
             margin: "0%",
@@ -54,8 +47,18 @@ function Services() {
             <li>Vacuuming</li>
             <li>Dusting, wipe-down of surfaces</li>
           </ul>
+
         </Container>
+        <p style={{ margin: "2%" }}>
+          We also offer discount packages for seniors and single mothers as well as
+          free estimates on our one-time and/or recurring cleaning either weekly,
+          bi-weekly or monthly.  Contact us to request an estimate and/or appointment! 
+        </p>
+        
       </p>
+
+
+
     </>
   );
 }
