@@ -56,9 +56,6 @@ function Services() {
         </p>
         
       </p>
-
-
-
     </>
   );
 }

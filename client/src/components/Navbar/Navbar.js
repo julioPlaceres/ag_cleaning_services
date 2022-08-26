@@ -18,15 +18,15 @@ function Navigation() {
           <EmailIcon />
         </Col>
 
-        <Col xs={3}>
+        <Col xs={1}>
           <Facebook />
         </Col>
 
-        <Col xs={3}>
+        <Col xs={1}>
           <Instagram />
         </Col>
 
-        <Col xs={6}>
+        <Col xs={10}>
           <Navbar expand="lg">
             <Navbar.Brand href="/home">
               {/* Show Logo on Navbar only if not on Home Page */}
@@ -37,6 +37,7 @@ function Navigation() {
               <Nav className="">
                 <Nav.Link href="/home">Home</Nav.Link>
                 <Nav.Link href="/about">About</Nav.Link>
+                <Nav.Link href="/gallery">Gallery</Nav.Link>
                 <Nav.Link href="/services">Services</Nav.Link>
                 <Nav.Link href="/reviews">Reviews</Nav.Link>
                 <Nav.Link href="/contact">Contact</Nav.Link>
