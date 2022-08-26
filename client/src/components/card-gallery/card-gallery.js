@@ -16,21 +16,7 @@ function CardItem(cardItem) {
 const GalleryCard = (props) => {
   return(
     <>
-      <Card className="mx-auto"
-      border='light'
-      style={{
-        maxWidth: "10rem",
-        borderRadius: "10px",
-        maxHeight: "300px",
-      }}
-      />
-
-      <Card.Img
-      variant='top'
-      src={props.src}
-      alt='card image'
-      style={{ maxWidth: "300px"}}
-/>
+      <img width="200" src={props.src}></img>
     </>
   )
 }
