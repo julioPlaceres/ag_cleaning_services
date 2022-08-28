@@ -1,9 +1,9 @@
-import ReviewCard from "../reviews-card/reviewCard";
-import React, { useState, useEffect } from "react";
+import ReviewCard from '../reviews-card/reviewCard';
+import React, { useState, useEffect } from 'react';
 
 // Convert the date to the local date format
 const setDate = (date) => {
-  return new Date(date).toLocaleDateString("en-gb");
+  return new Date(date).toLocaleDateString('en-gb');
 };
 
 const AllReviews = () => {
@@ -14,12 +14,11 @@ const AllReviews = () => {
   }, []);
 
   const fetchReviews = () => {
-    fetch("api/reviews")
+    fetch('api/reviews')
       .then((response) => {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         setReviews(data);
       });
   };
