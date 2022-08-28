@@ -1,7 +1,7 @@
 import "./Appointment.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
-function Appoinment() {
+function Appointment() {
   function bookAppointment() {
     window.open("https://www.agappoiments.com/", "_blank");
   }
@@ -11,7 +11,7 @@ function Appoinment() {
       <Container fluid>
         <Row className="mt-4" style={{ textAlign: "center" }}>
           <Col>
-            <p>Book an appoinment with us online</p>
+            <p>Book an appointment with us online</p>
             <Button variant="success" onClick={bookAppointment}>
               Book now
             </Button>
@@ -22,4 +22,4 @@ function Appoinment() {
   );
 }
 
-export default Appoinment;
+export default Appointment;
