@@ -1,30 +1,30 @@
-import { Container, Button } from "react-bootstrap";
+import { Container } from 'react-bootstrap';
 
 function Services() {
   return (
     <>
       <h2
         style={{
-          margin: "5%",
-          background: "#1BBC9B",
-          color: "white",
-          padding: "5%",
+          margin: '5%',
+          background: '#1BBC9B',
+          color: 'white',
+          padding: '5%',
         }}
       >
         Let us help make your home like new again.
       </h2>
-      <h4 style={{ margin: "5%" }}>
+      <h4 style={{ margin: '5%' }}>
         Here's a comprehensive list of our services:
       </h4>
       <p>
         <Container
           className="services-list"
           style={{
-            border: "3px solid #1BBC9B",
-            fontSize: "24px",
-            font: "Calibri bold",
-            margin: "0%",
-            padding: "5%",
+            border: '3px solid #1BBC9B',
+            fontSize: '24px',
+            font: 'Calibri bold',
+            margin: '0%',
+            padding: '5%',
           }}
         >
           <ul>
@@ -47,14 +47,13 @@ function Services() {
             <li>Vacuuming</li>
             <li>Dusting, wipe-down of surfaces</li>
           </ul>
-
         </Container>
-        <p style={{ margin: "2%" }}>
-          We also offer discount packages for seniors and single mothers as well as
-          free estimates on our one-time and/or recurring cleaning either weekly,
-          bi-weekly or monthly.  Contact us to request an estimate and/or appointment! 
+        <p style={{ margin: '2%' }}>
+          We also offer discount packages for seniors and single mothers as well
+          as free estimates on our one-time and/or recurring cleaning either
+          weekly, bi-weekly or monthly. Contact us to request an estimate and/or
+          appointment!
         </p>
-        
       </p>
     </>
   );
