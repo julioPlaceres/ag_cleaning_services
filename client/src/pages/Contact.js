@@ -1,7 +1,7 @@
 import "./Pages.css";
 import Locations from "../components/Locations/Locations";
-import AppointmentCall from "../components/Appoinment/Appoinment-Call";
-import AppointmentOnline from "../components/Appoinment/Appoinment-Online";
+import AppointmentCall from "../components/Appointment/Appointment-Call";
+import AppointmentOnline from "../components/Appointment/Appointment-Online";
 
 function Contact() {
   return (

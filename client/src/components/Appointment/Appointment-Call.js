@@ -2,7 +2,7 @@ import "./Appointment.css";
 import Phone from "../Link-Icons/Phone";
 import { Container, Row, Col } from "react-bootstrap";
 
-function AppoinmentCall() {
+function AppointmentCall() {
   return (
     <>
       <Container fluid>
@@ -17,4 +17,4 @@ function AppoinmentCall() {
   );
 }
 
-export default AppoinmentCall;
+export default AppointmentCall;
