@@ -28,7 +28,7 @@ const Gallery = () => {
   const fetchImages = () => {
     s3.listObjects(function (err, data) {
       if (err) {
-        return alert('There was an error listing your albums: ' + err.message);
+        return alert('There is a problem loading the images' + err.message);
       } else {
         setImage(data.Contents);
       }
@@ -42,7 +42,6 @@ const Gallery = () => {
           <GalleryCard key={image.Key} src={urlLink + image.Key}></GalleryCard>
         );
       })}
-      ;
     </Container>
   );
 };
