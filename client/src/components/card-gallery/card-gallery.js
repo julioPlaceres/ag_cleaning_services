@@ -1,6 +1,7 @@
 import './card-gallery.css';
-import { Link } from 'react-router-dom';
+import Image from 'react-bootstrap/Image';
 
+<<<<<<< HEAD
 const CardItem = (props) => {
   const { _id, name, image } = props;
 
@@ -13,5 +14,14 @@ const CardItem = (props) => {
     </div>
   );
 };
+=======
+const GalleryCard = (props) => {
+  return(
+    <>
+    <Image width="119.5vw" src={props.src}/>
+    </>
+  )
+}
+>>>>>>> 7220d807219c224eebedf8b9bfc85f74e7c51593
 
-export default CardItem;
+export default GalleryCard;
