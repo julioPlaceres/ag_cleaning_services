@@ -48,7 +48,7 @@ function Services() {
         </ul>
       </Container>
 
-      <p style={{ margin: '2%' }}>
+      <p style={{ margin: '2%', textAlign: "center"}}>
         We also offer discount packages for seniors and single mothers as well
         as free estimates on our one-time and/or recurring cleaning either
         weekly, bi-weekly or monthly. Contact us to request an estimate and/or
