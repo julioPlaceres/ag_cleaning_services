@@ -1,5 +1,7 @@
 # AG Cleaning & Services LLC ![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
 
+![image](https://user-images.githubusercontent.com/42756574/187736081-746d5ae6-3dc4-4197-a426-8f71d6c27205.png)
+
 Family owned and operated, AG Organizing and Cleaning Services was
 founded in 2022 with the mission of providing excellent cleaning
 services in the Syracuse, New York area. We offer service
