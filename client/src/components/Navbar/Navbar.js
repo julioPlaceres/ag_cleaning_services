@@ -25,15 +25,21 @@ function Navigation() {
         <Col xs={1}>
           <Instagram />
         </Col>
-
-        <Col xs={10}>
-          <Navbar expand="lg">
+        
+        <Col xs={6}>
+          <Navbar
+            collapseOnSelect
+            fixed="top"
+            expand="lg"
+            bg="secondary"
+            variant="dark"
+            className="Navbar-Styling"
+          >
             <Navbar.Brand href="/home">
               {/* Show Logo on Navbar only if not on Home Page */}
-              {/* <img src={Logo} width="100" height="70" /> */}
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="">
                 <Nav.Link href="/home">Home</Nav.Link>
                 <Nav.Link href="/about">About</Nav.Link>
