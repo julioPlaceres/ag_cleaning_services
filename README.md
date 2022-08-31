@@ -1,4 +1,4 @@
-# AG Cleaning & Services LLC ![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
+# AG Organizing & Cleaning & Services LLC ![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
 
 ![image](https://user-images.githubusercontent.com/42756574/187736081-746d5ae6-3dc4-4197-a426-8f71d6c27205.png)
 
