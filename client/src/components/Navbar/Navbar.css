@@ -1,8 +1,9 @@
 /* Navbar Styling */
+
 .animate-nav {
-  padding-left: 40%;
+  /* padding-left: 40%; */
   font-size: 18px;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   background-color: lightgray;
 }
 .styling {
@@ -15,4 +16,26 @@
   background-color: #37e2d5;
   transform: translateY(-10px);
   text-decoration: none;
+}
+
+/* Card styling*/
+.phone {
+  font-size: 20px;
+}
+
+.email {
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .icon-row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+.Navbar-Styling {
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 250ms;
+  font-size: 20px;
 }
