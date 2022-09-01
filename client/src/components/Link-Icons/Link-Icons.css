@@ -18,3 +18,12 @@
   color: lightseagreen;
   font-weight: bold;
 }
+
+.content{
+  display: flex;
+  justify-content:left;
+}
+
+.span{
+  width: 20px;
+}

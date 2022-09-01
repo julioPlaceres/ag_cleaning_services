@@ -1,12 +1,11 @@
 import './Navbar.css';
 import EmailIcon from '../Link-Icons/Email';
 import PhoneIcon from '../Link-Icons/Phone';
-import Facebook from '../Link-Icons/Facebook';
-import Instagram from '../Link-Icons/Instagram';
+import SocialMedia from '../Link-Icons/SocialMediaIcons';
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
-import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
+import { Container, Row, Col, Navbar, Nav, Button, Offcanvas} from 'react-bootstrap';
 
 function Navigation() {
   const [click, setClick] = useState(false);
@@ -14,8 +13,10 @@ function Navigation() {
 
   return (
     <>
-      <Navbar expand="lg">
+      <Navbar bg='light' expand="lg" className='mb-3'>
+
         <Container fluid>
+          
           <Col xs={6} sm={6} md={2} className="phone">
             <PhoneIcon />
           </Col>
@@ -24,14 +25,9 @@ function Navigation() {
             <EmailIcon />
           </Col>
 
-          <Row xs={6}>
-            <Col>
-              <Facebook />
-            </Col>
-            <Col>
-              <Instagram />
-            </Col>
-          </Row>
+          <Col xs={6}>
+              <SocialMedia />
+          </Col>
 
           <Col xs="auto">
             <Navbar.Toggle
@@ -43,7 +39,7 @@ function Navigation() {
 
           <Col lg={6}>
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav>
+              <Nav className={click ? "nav-menu active" : "nav-menu"}>
                 <Nav.Link href="/home">Home</Nav.Link>
                 <Nav.Link href="/about">About</Nav.Link>
                 <Nav.Link href="/gallery">Gallery</Nav.Link>
