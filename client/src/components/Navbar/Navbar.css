@@ -1,41 +1,16 @@
-/* Navbar Styling */
-
-.animate-nav {
-  /* padding-left: 40%; */
-  font-size: 18px;
-  /* padding-top: 20px; */
-  background-color: lightgray;
-}
-.styling {
-  font-family: Arial, Helvetica, sans-serif;
-  transition: transform 250ms;
-  font-size: 20px;
-}
-
-.styling:hover {
-  background-color: #37e2d5;
-  transform: translateY(-10px);
-  text-decoration: none;
-}
-
-/* Card styling*/
-.phone {
-  font-size: 20px;
-}
-
-.email {
+.icon-text {
   font-size: 15px;
-}
-
-@media (min-width: 768px) {
-  .icon-row {
-    display: flex;
-    flex-wrap: nowrap;
-  }
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .Navbar-Styling {
   font-family: Arial, Helvetica, sans-serif;
-  transition: transform 250ms;
   font-size: 20px;
+}
+
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

@@ -1,45 +1,26 @@
 import './Navbar.css';
-import EmailIcon from '../Link-Icons/Email';
-import PhoneIcon from '../Link-Icons/Phone';
+import ContactInfo from '../Link-Icons/ContactInfo';
 import SocialMedia from '../Link-Icons/SocialMediaIcons';
-import React, { useState } from 'react';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { AiOutlineClose } from 'react-icons/ai';
-import { Container, Row, Col, Navbar, Nav, Button, Offcanvas} from 'react-bootstrap';
+import { Container, Col, Navbar, Nav, Offcanvas } from 'react-bootstrap';
 
 function Navigation() {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
-
   return (
     <>
-      <Navbar bg='light' expand="lg" className='mb-3'>
-
+      <Navbar bg="light" expand="lg" className="mb-3 main-container" sticky='top'>
         <Container fluid>
           
-          <Col xs={6} sm={6} md={2} className="phone">
-            <PhoneIcon />
+          <Col className="icon-text">
+            <ContactInfo />
           </Col>
 
-          <Col xs={6} sm={6} md={2} className="email">
-            <EmailIcon />
-          </Col>
+          <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
 
-          <Col xs={6}>
-              <SocialMedia />
-          </Col>
-
-          <Col xs="auto">
-            <Navbar.Toggle
-              aria-controls="responsive-navbar-nav"
-              onClick={handleClick}
-              children={click ? <AiOutlineClose /> : <GiHamburgerMenu />}
-            />
-          </Col>
-
-          <Col lg={6}>
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className={click ? "nav-menu active" : "nav-menu"}>
+          <Navbar.Offcanvas aria-labelledby="offcanvasNavbarLabel-expand-lg" placement='end'>
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title>AG Organizing &amp; Cleaning Services LLC</Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <Nav className="justify-content-end flex-grow-1 pe-3 Navbar-Styling">
                 <Nav.Link href="/home">Home</Nav.Link>
                 <Nav.Link href="/about">About</Nav.Link>
                 <Nav.Link href="/gallery">Gallery</Nav.Link>
@@ -47,8 +28,13 @@ function Navigation() {
                 <Nav.Link href="/reviews">Reviews</Nav.Link>
                 <Nav.Link href="/contact">Contact</Nav.Link>
               </Nav>
-            </Navbar.Collapse>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
+
+          <Col xs={12} sm={12}>
+            <SocialMedia />
           </Col>
+
         </Container>
       </Navbar>
     </>
