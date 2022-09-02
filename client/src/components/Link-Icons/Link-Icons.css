@@ -1,19 +1,4 @@
-/* for smaller devices */
-.small-font {
-  font-size: xx-small;
-}
-
-/* to prevent icons from turning blue */
 .link-icons {
-  text-decoration: none;
-  color: rgb(17, 101, 180);
-}
-
-.size {
-  font-size: 0.8rem;
-}
-
-.link-icons-altern {
   text-decoration: none;
   color: lightseagreen;
   font-weight: bold;
@@ -25,5 +10,5 @@
 }
 
 .span{
-  width: 20px;
+  width: 5vw;
 }
