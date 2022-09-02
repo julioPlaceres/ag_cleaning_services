@@ -1,12 +1,18 @@
 import './card-gallery.css';
-import Image from 'react-bootstrap/Image';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const GalleryCard = (props) => {
-  return(
+  return (
     <>
-    <Image width="119.5vw" src={props.src}/>
+      <LazyLoadImage
+        className="imgFormat"
+        width="119.5vw"
+        src={props.src}
+        placeholderSrc="https://placehold.jp/150x150.png"
+        effect="blur"
+      />
     </>
-  )
-}
+  );
+};
 
 export default GalleryCard;
