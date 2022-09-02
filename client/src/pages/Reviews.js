@@ -9,11 +9,6 @@ const Reviews = () => {
         <p className="text-header">Share your experience</p>
         <ReviewForm />
       </Row>
-
-      <Row>
-        <p className="text-header">See what our customers say</p>
-        <AllReviews />
-      </Row>
     </Container>
   );
 };

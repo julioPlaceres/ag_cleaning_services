@@ -1,21 +1,31 @@
 import './ReviewForm.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import Alerts from '../Alerts/Alert';
+import ReviewCard from '../reviews-card/reviewCard'
 
 const ReviewForm = () => {
   const [username, setUsername] = useState('');
   const [reviewText, setReviewText] = useState('');
   const [alertMessage, setAlertMessage] = useState('');
   const [displayMessage, setDisplayMessage] = useState(false);
+  const [renderReview, setRenderedReviews] = useState([]);
 
+  useEffect(() => {
+    fetchReviews();
+  }, []);
+
+  const setDate = (date) => {
+    return new Date(date).toLocaleDateString('en-gb');
+  };
+  
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type set teh state of either username or reviewText
+    // Based on the input type set the state of either username or reviewText
     if (inputType === 'username') {
       setUsername(inputValue);
     } else if (inputType === 'reviewText') {
@@ -28,7 +38,6 @@ const ReviewForm = () => {
   const handleFormSubmit = (e) => {
     // Prevent the default behavious of the form submit (which is to refresh the page)
     e.preventDefault();
-
     // Check values are not empty
     if (username.trim() === '' || reviewText.trim() === '') {
       setAlertMessage('Please fill all fields');
@@ -38,6 +47,7 @@ const ReviewForm = () => {
 
     // Post Review
     postReviews();
+    fetchReviews()
 
     // If no error is found, clear input after succesful registration
     setUsername('');
@@ -45,7 +55,15 @@ const ReviewForm = () => {
     setAlertMessage('Hey got your ass saved');
     setDisplayMessage(true);
   };
-
+  const fetchReviews = () => {
+    fetch('api/reviews')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setRenderedReviews(data);
+      });
+  };
   const postReviews = () => {
     const reviewOptions = {
       method: 'POST',
@@ -98,6 +116,17 @@ const ReviewForm = () => {
           Submit
         </Button>
       </Form>
+
+      {renderReview.map((review) => {
+        return (
+          <ReviewCard
+            key={review._id}
+            review_name={review.review_name}
+            review_text={review.review_text}
+            review_date={setDate(review.review_date)}
+          />
+        );
+      })}
     </Container>
   );
 };
