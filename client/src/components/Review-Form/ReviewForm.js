@@ -2,13 +2,14 @@ import './ReviewForm.css';
 import React, { useState, useEffect } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import Alerts from '../Alerts/Alert';
-import ReviewCard from '../reviews-card/reviewCard'
+import ReviewCard from '../reviews-card/reviewCard';
 
 const ReviewForm = () => {
   const [username, setUsername] = useState('');
   const [reviewText, setReviewText] = useState('');
   const [alertMessage, setAlertMessage] = useState('');
   const [displayMessage, setDisplayMessage] = useState(false);
+  const [messageType, setMessageType] = useState('');
   const [renderReview, setRenderedReviews] = useState([]);
 
   useEffect(() => {
@@ -18,7 +19,7 @@ const ReviewForm = () => {
   const setDate = (date) => {
     return new Date(date).toLocaleDateString('en-gb');
   };
-  
+
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
     const { target } = e;
@@ -41,18 +42,20 @@ const ReviewForm = () => {
     // Check values are not empty
     if (username.trim() === '' || reviewText.trim() === '') {
       setAlertMessage('Please fill all fields');
+      setMessageType('warning');
       setDisplayMessage(true);
       return;
     }
 
     // Post Review
     postReviews();
-    fetchReviews()
+    fetchReviews();
 
     // If no error is found, clear input after succesful registration
     setUsername('');
     setReviewText('');
-    setAlertMessage('Hey got your ass saved');
+    setAlertMessage('We thank you for your feedback!');
+    setMessageType('success');
     setDisplayMessage(true);
   };
   const fetchReviews = () => {
@@ -87,7 +90,7 @@ const ReviewForm = () => {
 
   return (
     <Container fluid>
-      <Alerts text={alertMessage} show={displayMessage} />
+      <Alerts variant={messageType} text={alertMessage} show={displayMessage} />
       <Form>
         <Form.Group className="mb-3">
           <Form.Label>Name</Form.Label>

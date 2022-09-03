@@ -2,7 +2,7 @@ import Alert from 'react-bootstrap/Alert';
 
 const Alerts = (props) => {
   return (
-    <Alert key="secondary" variant="secondary" show={props.show}>
+    <Alert key={props.variant} variant={props.variant} show={props.show}>
       {props.text}
     </Alert>
   );
