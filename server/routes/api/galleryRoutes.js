@@ -1,3 +1,4 @@
+const awsImages = require("../../util/aws-images");
 const router = require("express").Router();
 const Gallery = require("../../models/Gallery");
 
@@ -12,4 +13,7 @@ router.get("/", (req, res) => {
     });
 });
 
+router.post("/", (res) => {
+  console.log(awsImages.Gallery)
+})
 module.exports = router;
