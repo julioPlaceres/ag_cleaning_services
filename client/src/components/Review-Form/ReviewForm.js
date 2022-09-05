@@ -58,6 +58,7 @@ const ReviewForm = () => {
     setMessageType('success');
     setDisplayMessage(true);
   };
+
   const fetchReviews = () => {
     fetch('api/reviews')
       .then((response) => {
@@ -67,6 +68,7 @@ const ReviewForm = () => {
         setRenderedReviews(data);
       });
   };
+
   const postReviews = () => {
     const reviewOptions = {
       method: 'POST',
