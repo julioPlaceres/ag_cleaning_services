@@ -7,6 +7,11 @@ const gallerySchema = new Schema({
     type: String,
     required: true,
     trim: true,
+  },
+  image_url: {
+    type: String,
+    required: true,
+    trim: true
   }
 });
 
