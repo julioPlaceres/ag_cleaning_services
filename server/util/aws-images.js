@@ -1,4 +1,4 @@
-import AWS from 'aws-sdk';
+const AWS = require('aws-sdk');
 
 var bucketName = 'agcleaningservices';
 var urlLink = 'https://agcleaningservices.s3.amazonaws.com/';
@@ -16,13 +16,13 @@ var s3 = new AWS.S3({
 });
 
 const Gallery = () => {
-    s3.listObjects(function (err, data) {
-      if (err) {
-        return alert('There is a problem loading the images' + err.message);
-      } else {
-        return data.Contents
-      }
-    });
-  };
+  s3.listObjects(function (err, data) {
+    if (err) {
+      return alert('There is a problem loading the images' + err.message);
+    } else {
+      return data.Contents;
+    }
+  });
+};
 
-export default Gallery;
+module.exports = Gallery;

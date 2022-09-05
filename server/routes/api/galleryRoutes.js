@@ -15,5 +15,6 @@ router.get("/", (req, res) => {
 
 router.post("/", (res) => {
   console.log(awsImages.Gallery)
-})
+});
+
 module.exports = router;
