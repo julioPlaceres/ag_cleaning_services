@@ -2,6 +2,7 @@ const AWS = require('aws-sdk');
 const router = require('express').Router();
 const Gallery = require('../../models/Gallery');
 
+// Placeholders for the data
 let awsData = [];
 let dbData = [];
 
@@ -19,33 +20,27 @@ var s3 = new AWS.S3({
 
 // Gets the request and checks if the Db needs to be updated
 router.get('/', (req, res) => {
-  console.log('AWS Length: ' + awsData.length);
-  console.log('DB Length: ' + dbData.length);
-    console.log('AWS Data: ' + awsData);
-    console.log('DB Data: ' + dbData);
-    console.log('matched: ' + awsData.length != dbData.length);
-    dbUpdate(awsData.length, dbData.length);
-});
+  const needsUpdate = CheckCount(awsData.length, dbData.length);
+  if(needsUpdate){
+    // Update DB if count does not match
+  }
+  else{
+    // Send the DB Request to front End
+    res.json(dbData);
+  }
+})
+
+const CheckCount = (awsCount, dbCount) => awsCount != dbCount ? true : false;
 
 (async function(){
-  try{
-    AWS.config.setPromisesDependency();
-    const response = await s3.listObjectsV2({Bucket: process.env.BUCKET_NAME}).promise();
-    awsData = response.Contents;
-  }
-  catch(e){
-    console.log(`Error: ${e}`);
-  }
-})();
+  // Returns a JSON object with all the data from the MongoDb Collection
+  const dbResponse = await Gallery.find({});
+  dbData = await dbResponse;
 
-(async function(){
-  const response = await Gallery.find({});
-  dbData = await response;
+  // Returns a Object with all the Metadata from the objects in the S3 bucket
+  AWS.config.setPromisesDependency();
+  const awsResponse = await s3.listObjectsV2({Bucket: process.env.BUCKET_NAME}).promise();
+  awsData = awsResponse.Contents;
 })();
-
-function dbUpdate(awsCount, dbCount) {
-  console.log(`There are ${awsCount} in AWS and ${dbCount}`);
-  console.log('Database Needs to Update');
-}
 
 module.exports = router;
