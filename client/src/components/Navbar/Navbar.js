@@ -25,7 +25,7 @@ function Navigation() {
         <Col xs={1}>
           <Instagram />
         </Col>
-        
+
         <Col xs={6}>
           <Navbar
             collapseOnSelect
