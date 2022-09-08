@@ -2,6 +2,9 @@ const AWS = require('aws-sdk');
 const router = require('express').Router();
 const Gallery = require('../../models/Gallery');
 
+let awsData = [];
+let dbData = [];
+
 // Initialize the Amazon Cognito credentials provider
 AWS.config.region = process.env.AWS_REGION;
 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
@@ -16,46 +19,32 @@ var s3 = new AWS.S3({
 
 // Gets the request and checks if the Db needs to be updated
 router.get('/', (req, res) => {
-  getImagesCount().then(([dbData, awsData]) => {
+  console.log('AWS Length: ' + awsData.length);
+  console.log('DB Length: ' + dbData.length);
     console.log('AWS Data: ' + awsData);
     console.log('DB Data: ' + dbData);
     console.log('matched: ' + awsData.length != dbData.length);
-  });
+    dbUpdate(awsData.length, dbData.length);
 });
 
-async function getImagesCount() {
-  console.log('Initiating Images Count');
-  const [dbResponse, awsResponse] = await Promise.all([
-    GetDbData(),
-    getAwsData(),
-  ]);
+(async function(){
+  try{
+    AWS.config.setPromisesDependency();
+    const response = await s3.listObjectsV2({Bucket: process.env.BUCKET_NAME}).promise();
+    awsData = response.Contents;
+  }
+  catch(e){
+    console.log(`Error: ${e}`);
+  }
+})();
 
-  const dbData = await dbResponse;
-  const awsData = await awsResponse;
-
-  return [dbData, awsData];
-}
-
-async function GetDbData() {
-  console.log('Getting DB Data');
+(async function(){
   const response = await Gallery.find({});
-  const data = await response;
-  console.log('Db Data func: ' + data);
-  return data;
-}
+  dbData = await response;
+})();
 
-function getAwsData() {
-  console.log('Getting AWS Data');
-  const data = s3.listObjectsV2(async function (err, data) {
-    const response = await data.Contents;
-    console.log('res: ' + JSON.stringify(response));
-    return response;
-  });
-  console.log('AWS Data func: ' + data);
-  return data;
-}
-
-function dbUpdate() {
+function dbUpdate(awsCount, dbCount) {
+  console.log(`There are ${awsCount} in AWS and ${dbCount}`);
   console.log('Database Needs to Update');
 }
 
