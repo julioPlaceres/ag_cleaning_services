@@ -2,6 +2,10 @@ const AWS = require('aws-sdk');
 const router = require('express').Router();
 const Gallery = require('../../models/Gallery');
 
+// Placeholders for the data
+let awsData = [];
+let dbData = [];
+
 // Initialize the Amazon Cognito credentials provider
 AWS.config.region = process.env.AWS_REGION;
 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
@@ -16,47 +20,27 @@ var s3 = new AWS.S3({
 
 // Gets the request and checks if the Db needs to be updated
 router.get('/', (req, res) => {
-  getImagesCount().then(([dbData, awsData]) => {
-    console.log('AWS Data: ' + awsData);
-    console.log('DB Data: ' + dbData);
-    console.log('matched: ' + awsData.length != dbData.length);
-  });
-});
+  const needsUpdate = CheckCount(awsData.length, dbData.length);
+  if(needsUpdate){
+    // Update DB if count does not match
+  }
+  else{
+    // Send the DB Request to front End
+    res.json(dbData);
+  }
+})
 
-async function getImagesCount() {
-  console.log('Initiating Images Count');
-  const [dbResponse, awsResponse] = await Promise.all([
-    GetDbData(),
-    getAwsData(),
-  ]);
+const CheckCount = (awsCount, dbCount) => awsCount != dbCount ? true : false;
 
-  const dbData = await dbResponse;
-  const awsData = await awsResponse;
+(async function(){
+  // Returns a JSON object with all the data from the MongoDb Collection
+  const dbResponse = await Gallery.find({});
+  dbData = await dbResponse;
 
-  return [dbData, awsData];
-}
-
-async function GetDbData() {
-  console.log('Getting DB Data');
-  const response = await Gallery.find({});
-  const data = await response;
-  console.log('Db Data func: ' + data);
-  return data;
-}
-
-function getAwsData() {
-  console.log('Getting AWS Data');
-  const data = s3.listObjectsV2(async function (err, data) {
-    const response = await data.Contents;
-    console.log('res: ' + JSON.stringify(response));
-    return response;
-  });
-  console.log('AWS Data func: ' + data);
-  return data;
-}
-
-function dbUpdate() {
-  console.log('Database Needs to Update');
-}
+  // Returns a Object with all the Metadata from the objects in the S3 bucket
+  AWS.config.setPromisesDependency();
+  const awsResponse = await s3.listObjectsV2({Bucket: process.env.BUCKET_NAME}).promise();
+  awsData = awsResponse.Contents;
+})();
 
 module.exports = router;

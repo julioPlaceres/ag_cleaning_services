@@ -1,12 +1,44 @@
 // MongoDB Playground
 
 use('agCleaningServicesDb');
-db.GalleryCollection.drop();
-db.GalleryCollection.insertMany([
+db.galleries.drop();
+db.galleries.insertMany([
   { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
   { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+    { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+    { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+    { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+    { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+    { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+    { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
   { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
 ]);
 
 
-db.GalleryCollection.find({});
+db.galleries.find({});
