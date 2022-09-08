@@ -1,19 +1,25 @@
-import "./OperationHours.css";
-import { Container, Row, Table } from "react-bootstrap";
+import './OperationHours.css';
+import { Container, Row, Table } from 'react-bootstrap';
 
 const OperationHours = () => {
   return (
     <Container fluid>
       <Row>
-        <p>Hours of Operation</p>
+        {/* I also increase font size and I give the match color for the header and paragraph */}
+        <p style={{ fontSize: '2rem', color: '#F9F9F9' }}>Hours of Operation</p>
       </Row>
-
-      <Row className="sepration-lines">
-        <hr style={{ width: "45%", color: "green", height: "2px" }} />
-      </Row>
-
-      <Row>
-        <Table>
+      {/* I increase the font size of the Operation hours */}
+      <Row style={{ fontSize: '1.3rem', paddingTop: '50px' }}>
+        {/* I apply width to adjust table the right way, and the most important the margin 0 to position the table in the middle */}
+        <Table
+          style={{
+            width: '50%',
+            borderColor: '#F9F9F9',
+            justifyContent: 'center',
+            margin: 'auto',
+            color: '#F9F9F9',
+          }}
+        >
           <tbody>
             <tr>
               <td>Sunday</td>
