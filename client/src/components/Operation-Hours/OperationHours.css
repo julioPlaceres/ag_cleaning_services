@@ -1,23 +1,14 @@
 .table {
-    text-align: center;
-    align-content: center;
-    width: 100%;
+  text-align: center;
+  align-content: center;
+  width: 100%;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-left: 17rem;
-}
-
-.titles{
-    text-align: center; 
-    margin-left: 11.5rem;
-}
-
-.sepration-lines{
-    justify-content: center;
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 17rem;
 }

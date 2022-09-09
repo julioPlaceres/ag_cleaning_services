@@ -1,16 +1,24 @@
 .table {
-    text-align: center;
-    align-content: center;
-    width: 100%;
+  text-align: center;
+  align-content: center;
+  width: 100%;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sepration-lines {
+  justify-content: center;
+}
+
+/* I add mediqueries to add the background color that wasn't displaying */
+@media screen and (min-width: 500px) {
+  .container {
+    background-color: #54bab9;
     flex-wrap: wrap;
-    justify-content: center;
-}
-
-.sepration-lines{
-    justify-content: center;
+  }
 }

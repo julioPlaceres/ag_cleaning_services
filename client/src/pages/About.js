@@ -1,24 +1,39 @@
-import "./Pages.css";
-import { Container, Row, Col } from "react-bootstrap";
+import './Pages.css';
+import { Container, Row, Col } from 'react-bootstrap';
 
 function About() {
   return (
     <>
-      <Container fluid style={{ background: "#1BBC9B", padding: "4%" }}>
-        <h1 className="mt-3" style={{ textAlign: "center", color: "white" }}>
+      <Container fluid style={{ background: 'white', padding: '4%' }}>
+        <h1
+          className="mt-3"
+          style={{
+            textAlign: 'center',
+            color: '#54BAB9',
+            fontSize: '50px',
+            fontWeight: 'bold',
+          }}
+        >
           About AG Organizing and Cleaning Services
         </h1>
       </Container>
-      <Container
-        className="mt-5"
-        fluid
-        style={{
-          border: "3px solid #1BBC9B",
-        }}
-      >
+      {/* Remove green borders to make paragraph look clean */}
+      <Container className="mt-5" fluid>
         <Row>
           <Col>
-            <p className="mt-3" style={{ textAlign: "center" }}>
+            <p
+              // I changed the font size, also I justify the text for a better look
+              // Also I used the typography that combines the header and paragraph in the better looking way for the audience, and I used line height to separate text
+              className="mt-3"
+              style={{
+                textAlign: 'justify',
+                fontSize: '20px',
+                maxWidth: '70%',
+                marginBottom: '200px',
+                paddingLeft: '655px',
+                lineHeight: '250%',
+              }}
+            >
               Family owned and operated, AG Organizing and Cleaning Services was
               founded in 2022 with the mission of providing excellent cleaning
               services in the Syracuse, New York area. We offer service
