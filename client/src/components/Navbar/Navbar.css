@@ -38,4 +38,11 @@
   font-family: Arial, Helvetica, sans-serif;
   transition: transform 250ms;
   font-size: 20px;
+  font-weight: 600;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
