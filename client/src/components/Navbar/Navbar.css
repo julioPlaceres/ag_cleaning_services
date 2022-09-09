@@ -23,25 +23,25 @@
   font-size: 20px;
 }
 
-.email {
+.icon-text {
   font-size: 15px;
-}
-
-@media (min-width: 768px) {
-  .icon-row {
-    display: flex;
-    flex-wrap: nowrap;
-  }
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .Navbar-Styling {
   font-family: Arial, Helvetica, sans-serif;
-  transition: transform 250ms;
   font-size: 20px;
   font-weight: 600;
 }
 
 .main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

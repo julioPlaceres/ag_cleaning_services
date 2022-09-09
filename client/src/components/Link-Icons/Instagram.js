@@ -4,7 +4,7 @@ import { AiFillInstagram } from 'react-icons/ai';
 const Instagram = () => {
   return (
     <a
-      className="link-icons-altern icon"
+      className="link-icons"
       target="_bank"
       href="https://www.instagram.com/ag_ocleaningservices/"
     >
