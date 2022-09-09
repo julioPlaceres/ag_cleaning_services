@@ -1,0 +1,44 @@
+// MongoDB Playground
+
+use('agCleaningServicesDb');
+db.galleries.drop();
+db.galleries.insertMany([
+  { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+    { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+    { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+    { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+    { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+    { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+    { 'image_name': 'IMG_6042.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_6042.jpeg'},
+  { 'image_name': 'IMG_8398.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_8398.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+  { 'image_name': 'MG_9960.jpeg', 'image_url': 'https://agcleaningservices.s3.amazonaws.com/IMG_9960.jpeg' },
+]);
+
+
+db.galleries.find({});
