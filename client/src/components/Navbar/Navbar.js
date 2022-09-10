@@ -8,15 +8,18 @@ function Navigation() {
   return (
     <>
       <Navbar
-        style={{ background: 'F9F9F9' }}
-        // sbg="secondary"
+        bg="light"
         expand="lg"
         className="mb-3 main-container"
         sticky="top"
       >
         <Container fluid>
-      <Navbar bg="light" expand="lg" className="mb-3 main-container" sticky='top'>
-        <Container fluid>
+          <Col className="icon-text">
+            <ContactInfo />
+          </Col>
+
+          <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
+
           <Navbar.Offcanvas
             aria-labelledby="offcanvasNavbarLabel-expand-lg"
             placement="end"
@@ -28,26 +31,19 @@ function Navigation() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3 Navbar-Styling">
-                <NavbarLink href="/home">Home</NavbarLink>
-                <NavbarLink href="/about">About</NavbarLink>
-                <NavbarLink href="/gallery">Gallery</NavbarLink>
-                <NavbarLink href="/services">Services</NavbarLink>
-                <NavbarLink href="/reviews">Reviews</NavbarLink>
-                <NavbarLink href="/contact">Contact</NavbarLink>
-          <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
+                <NavbarLink href="/home" text="Home"/>
+                <NavbarLink href="/about" text="About"/>
+                <NavbarLink href="/gallery" text="Gallery"/>
+                <NavbarLink href="/services" text="Services"/>
+                <NavbarLink href="/reviews" text="Reviews"/>
+                <NavbarLink href="/contact" text="Contact"/>
+              </Nav>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
 
-          <Navbar.Offcanvas aria-labelledby="offcanvasNavbarLabel-expand-lg" placement='end'>
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title>AG Organizing &amp; Cleaning Services LLC</Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3 Navbar-Styling">
-                <Nav.Link href="/home">Home</Nav.Link>
-                <Nav.Link href="/about">About</Nav.Link>
-                <Nav.Link href="/gallery">Gallery</Nav.Link>
-                <Nav.Link href="/services">Services</Nav.Link>
-                <Nav.Link href="/reviews">Reviews</Nav.Link>
-                <Nav.Link href="/contact">Contact</Nav.Link>
+          <Col xs={12} sm={12}>
+            <SocialMedia />
+          </Col>
         </Container>
       </Navbar>
     </>
