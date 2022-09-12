@@ -30,7 +30,7 @@ const CardServices = (props) => {
           </Card.Title>
           <Card.Text style={{ color: 'black' }}>
             {' '}
-            <large>{props.text}</large>
+            {props.text}
           </Card.Text>
           <Button className="button" variant="info">
             {props.btnText}
