@@ -2,13 +2,27 @@
   text-decoration: none;
   color: lightseagreen;
   font-weight: bold;
+  width:max-content;
 }
 
 .content{
   display: flex;
   justify-content:left;
+  font-size: 4vw;
 }
 
 .span{
-  width: 5vw;
+  width: 10px;
+}
+
+@media only screen and (min-width: 576px) {
+  .content{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .span{
+    width: 50px;
+  }
 }
