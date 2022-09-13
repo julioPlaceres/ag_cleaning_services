@@ -1,8 +1,8 @@
 import './Navbar.css';
+import NavbarLink from '../Nav-Link/NavLink';
 import ContactInfo from '../Link-Icons/ContactInfo';
 import SocialMedia from '../Link-Icons/SocialMediaIcons';
 import { Container, Col, Navbar, Nav, Offcanvas } from 'react-bootstrap';
-import NavbarLink from '../Nav-Link/NavLink';
 
 function Navigation() {
   return (
@@ -29,6 +29,7 @@ function Navigation() {
                 AG Organizing &amp; Cleaning Services LLC
               </Offcanvas.Title>
             </Offcanvas.Header>
+            
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3 Navbar-Styling">
                 <NavbarLink href="/home" text="Home"/>
@@ -41,7 +42,7 @@ function Navigation() {
             </Offcanvas.Body>
           </Navbar.Offcanvas>
 
-          <Col xs={12} sm={12}>
+          <Col xs={12} sm={12} className='icon-text icon-social'>
             <SocialMedia />
           </Col>
         </Container>

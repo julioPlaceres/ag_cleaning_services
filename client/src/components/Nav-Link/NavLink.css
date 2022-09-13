@@ -1,0 +1,11 @@
+.styling {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 250ms;
+    font-size: 20px;
+  }
+  
+  .styling:hover {
+    background-color: #54bab9;
+    transform: translateY(-10px);
+    text-decoration: none;
+  }

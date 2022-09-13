@@ -3,7 +3,7 @@ import { NavLink } from 'react-bootstrap';
 
 const NavbarLink = (props) => {
   return(
-  <NavLink href={props.href}>{props.text}</NavLink>
+  <NavLink className='styling' href={props.href}>{props.text}</NavLink>
 )};
 
 export default NavbarLink;
