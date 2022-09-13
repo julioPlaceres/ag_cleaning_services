@@ -1,5 +1,5 @@
 import './Card-Services.css';
-import { Card, Button, Container } from 'react-bootstrap';
+import { Card, Button, Container, Row } from 'react-bootstrap';
 
 const CardServices = (props) => {
   return (
@@ -9,7 +9,8 @@ const CardServices = (props) => {
         style={{
           maxWidth: '20rem',
           borderRadius: '10px',
-          height: '500px',
+          height: 'auto',
+          minHeight: '600px'
         }}
         className="mx-auto"
       >
@@ -17,24 +18,31 @@ const CardServices = (props) => {
           variant="top"
           src={props.src}
           alt="card image"
-          // Add pading of 0px to adjust the size of the image to the cards
           style={{ maxWidth: '400px', padding: '0px' }}
         />
-        <Card.Body>
+        <Card.Body className='flex-container card-body'>
           <Card.Title
-            // Add adding turquoise color to the title which gives nice looking touch to the cards
             style={{ color: 'turquoise' }}
           >
             {' '}
             {props.title}
           </Card.Title>
-          <Card.Text style={{ color: 'black' }}>
+          <Card.Text className='card-text' style={{ color: 'black' }}>
             {' '}
             {props.text}
           </Card.Text>
-          <Button className="button" variant="info">
-            {props.btnText}
+          <Row className='flex-container card-buttons'>
+
+          <Button className='buttons' variant="info">
+            {props.infoBtnText}
           </Button>
+
+          
+          <Button className='buttons' variant='warning'>
+            {props.warningBtnText}
+          </Button>
+          
+          </Row>
         </Card.Body>
       </Card>
     </Container>

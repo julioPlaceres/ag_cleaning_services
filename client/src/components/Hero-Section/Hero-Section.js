@@ -5,7 +5,7 @@ import { Container, Image } from 'react-bootstrap';
 const HeroSection = () => {
   return (
     <Container fluid className="main-img">
-      <Image fluid src={Img1} alt="First slide" />
+      <Image fluid src={Img1} alt="Company Logo" />
     </Container>
   );
 };
