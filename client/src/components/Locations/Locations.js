@@ -6,8 +6,8 @@ function Locations() {
     <>
       <Container fluid className="mt-4">
         <Row className="locations">
-          <p className="area-header">Area we services</p>
-          <Col>
+          <p id="area-header" className="locations">Area we services</p>
+          <Col className="col-locations">
             <ul>
               <li>Liverpool, NY</li>
               <li>Cazenovia, NY</li>
@@ -19,8 +19,6 @@ function Locations() {
               <li>Cicero, NY</li>
               <li>Clay, NY</li>
             </ul>
-          </Col>
-          <Col>
             <ul>
               <li>Syracuse, NY</li>
               <li>Fayetteville, NY</li>

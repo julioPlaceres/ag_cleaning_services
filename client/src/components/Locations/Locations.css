@@ -1,17 +1,15 @@
-.main-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
-
 .locations{
-    font-size: 3.5vw
+    font-size: 3.5vw;
 }
 
-.area-header{
-    font-size: small;
+#area-header{
     text-align: center;
+}
+
+.col-locations{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
 }
 
 /* Media Queries to prevent font size keeps from shrinking or oversizing */
@@ -19,6 +17,7 @@
     .locations {
       font-size: xx-small;
     }
+
 }
 
 @media only screen and (min-width: 700px) {
