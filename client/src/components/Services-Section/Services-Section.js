@@ -8,9 +8,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 const ServicesSection = () => {
   return (
     <Container fluid>
-      <Row className='row-md' xs={12}>
-        <h6 className="mb-5 mt-5">
-          What better than the fresh scent of a clean house!
+      <Row className="row-md" xs={12}>
+        <h6 className="mb-5 header-styling mt-5">
+          What better than the fresh scent <br />
+          of a clean house!
         </h6>
       </Row>
 
