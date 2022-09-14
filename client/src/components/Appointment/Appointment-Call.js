@@ -7,8 +7,8 @@ function AppointmentCall() {
     <>
       <Container fluid>
         <Row>
-          <Col style={{ textAlign: "center" }}>
-            <h6>We are just one call away</h6>
+          <Col id="app-call-col">
+            <h6 id="app-call-title">We are just one call away</h6>
             <Phone />
           </Col>
         </Row>

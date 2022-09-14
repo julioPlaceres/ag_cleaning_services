@@ -10,7 +10,7 @@ function Navigation() {
       <Navbar
         bg="light"
         expand="lg"
-        className="mb-3 main-container"
+        className="mb-3 container-main-navbar"
         sticky="top"
       >
         <Container fluid>

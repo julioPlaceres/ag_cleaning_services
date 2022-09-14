@@ -1,4 +1,5 @@
 import './card-gallery.css';
+import placeHolderImg from '../images/placeHolderImg.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const GalleryCard = (props) => {
@@ -8,7 +9,7 @@ const GalleryCard = (props) => {
         className="imgFormat"
         width={119}
         src={props.src}
-        placeholderSrc="https://placehold.jp/150x150.png"
+        placeholderSrc={placeHolderImg}
         effect="blur"
       />
     </>
