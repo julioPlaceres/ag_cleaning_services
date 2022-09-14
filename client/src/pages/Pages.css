@@ -1,5 +1,8 @@
 .text-header{
     text-align: center;
+    color: #54BAB9;
+    font-weight: bold;
+    font-size: xx-large;
 }
 
 .about-container{
@@ -21,4 +24,9 @@
     font-size: 20px;
     line-height: 250%;
     max-width: 85%;
+}
+
+.container-review-main{
+    padding-top: 25px;
+    padding-bottom: 25px;
 }

@@ -4,7 +4,7 @@ import { Card, Container } from "react-bootstrap";
 const ReviewCard = (props) => {
   return (
     <Container fluid className="mb-4">
-      <Card>
+      <Card className="card-review">
         <Card.Header>{props.review_name}</Card.Header>
         <Card.Body>
           <blockquote className="blockquote mb-0">

@@ -1,6 +1,6 @@
 import './ReviewForm.css';
 import React, { useState, useEffect } from 'react';
-import { Container, Form, Button } from 'react-bootstrap';
+import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 import Alerts from '../Alerts/Alert';
 import ReviewCard from '../reviews-card/reviewCard';
 
@@ -84,16 +84,14 @@ const ReviewForm = () => {
       .catch((err) => {
         console.log(err);
       })
-      .finally();
-    // This needs work, we need to find a way to do it without
-    // refreshing the page.
-    // window.location.reload();
   };
 
   return (
-    <Container fluid>
+    <Container fluid className='container-review-main'>
+
       <Alerts variant={messageType} text={alertMessage} show={displayMessage} />
-      <Form>
+      
+      <Form className='form-main-review'>
         <Form.Group className="mb-3">
           <Form.Label>Name</Form.Label>
           <Form.Control
@@ -117,11 +115,14 @@ const ReviewForm = () => {
             placeholder="start typing your review"
           />
         </Form.Group>
-        <Button variant="primary" type="submit" onClick={handleFormSubmit}>
+        <div className='div-review-btn'>
+        <Button className='mb-5 btn-review-form' variant="primary" type="submit" onClick={handleFormSubmit}>
           Submit
         </Button>
+        </div>
       </Form>
 
+      <Row className='row-review-cards'>
       {renderReview.map((review) => {
         return (
           <ReviewCard
@@ -132,6 +133,7 @@ const ReviewForm = () => {
           />
         );
       })}
+      </Row>
     </Container>
   );
 };
