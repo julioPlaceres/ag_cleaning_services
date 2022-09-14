@@ -1,13 +1,11 @@
-import { Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import ReviewForm from '../components/Review-Form/ReviewForm';
 
 const Reviews = () => {
   return (
-    <Container fluid>
-      <Row className="mb-5">
+    <Container fluid className='container-review-main'>
         <p className="text-header">Share your experience</p>
         <ReviewForm />
-      </Row>
     </Container>
   );
 };
