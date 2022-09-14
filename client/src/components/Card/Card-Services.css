@@ -17,35 +17,35 @@
   z-index: 10;
 }
 
-.flex-container{
+.flex-container {
   display: flex;
   flex-flow: column;
 }
 
-.card-text{
+.card-text {
   flex-grow: 1;
 }
 
-.card-buttons{
+.card-buttons {
   width: 100%;
   flex-wrap: wrap;
-  margin-left: 0.10vw;
+  margin-left: 0.1vw;
 }
 
-.buttons{
+.buttons {
   margin-bottom: 10px;
   max-width: 400px;
   font-size: 1.1rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .card-buttons{
+  .card-buttons {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .buttons{
+  .buttons {
     margin-bottom: 0;
     max-width: 125px;
   }
