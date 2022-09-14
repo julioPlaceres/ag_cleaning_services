@@ -18,3 +18,9 @@ h6 {
   font-weight: bold;
   text-align: center;
 }
+
+.header-styling {
+  color: #54bab9;
+  font-weight: bold;
+  font-size: 3em;
+}
