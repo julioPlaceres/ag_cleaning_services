@@ -3,29 +3,15 @@ import { Container } from 'react-bootstrap';
 function Services() {
   return (
     <>
-      <h2
-        style={{
-          margin: '5%',
-          background: '#1BBC9B',
-          color: 'white',
-          padding: '5%',
-        }}
-      >
+      <h2 className="h2-services-title text-services">
         Let us help make your home like new again.
       </h2>
-      <h4 style={{ margin: '5%' }}>
+
+      <h4 className="h4-services-subtitle text-services">
         Here's a comprehensive list of our services:
       </h4>
 
-      <Container
-        className="services-list"
-        style={{
-          fontSize: '24px',
-          font: 'Calibri bold',
-          margin: '0%',
-          padding: '5%',
-        }}
-      >
+      <Container fluid className="container-services-main">
         <ul>
           <li>Standard full area cleaning</li>
           <li>Deep cleaning of rooms, including garages. </li>
@@ -48,7 +34,7 @@ function Services() {
         </ul>
       </Container>
 
-      <p style={{ margin: '2%', textAlign: "center"}}>
+      <p className="p-services-note">
         We also offer discount packages for seniors and single mothers as well
         as free estimates on our one-time and/or recurring cleaning either
         weekly, bi-weekly or monthly. Contact us to request an estimate and/or
