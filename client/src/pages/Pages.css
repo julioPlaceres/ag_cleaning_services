@@ -37,3 +37,24 @@
     flex-wrap: wrap;
     align-items: baseline;
 }
+
+/* Services Page */
+.text-services{
+    margin: 2%;
+    text-align: center;
+}
+
+.h2-services-title{
+    color: #1BBC9B;
+}
+
+.container-services-main{
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+}
+
+.p-services-note{
+    margin: 2%;
+    text-align: center;
+}
