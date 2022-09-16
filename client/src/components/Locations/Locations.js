@@ -6,7 +6,7 @@ function Locations() {
     <>
       <Container fluid className="mt-4">
         <Row className="locations">
-          <p id="area-header" className="locations">Area we services</p>
+          <p id="area-header" className="locations">Areas we service:</p>
           <Col className="col-locations">
             <ul>
               <li>Liverpool, NY</li>
