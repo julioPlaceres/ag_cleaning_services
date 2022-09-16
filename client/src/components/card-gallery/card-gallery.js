@@ -7,7 +7,7 @@ const GalleryCard = (props) => {
     <>
       <LazyLoadImage
         className="imgFormat"
-        width={300}
+        width={119}
         src={props.src}
         placeholderSrc={placeHolderImg}
         effect="blur"
