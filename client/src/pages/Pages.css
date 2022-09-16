@@ -30,3 +30,10 @@
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
+.container-gallery-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+}

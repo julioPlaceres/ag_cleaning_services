@@ -20,8 +20,7 @@ const Gallery = () => {
   };
 
   return (
-    // I add padding 4% on container because the backgrund color of the footer  was not  taking the the all screen-size
-    <Container fluid style={{ padding: '4%' }}>
+    <Container fluid className='container-gallery-main'>
       {images.map((image) => {
         return (
           <GalleryCard key={image._id} src={image.image_url}></GalleryCard>
