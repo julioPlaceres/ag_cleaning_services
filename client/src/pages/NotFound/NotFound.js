@@ -1,5 +1,3 @@
-import "./Pages.css";
-
 function NotFound() {
   return (
     <>

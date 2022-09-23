@@ -1,0 +1,23 @@
+.h2-services-title{
+    color: #1BBC9B;
+}
+
+.text-services{
+    margin: 2%;
+    text-align: center;
+}
+
+.h4-services-subtitle{
+     text-align: center; /* Delete line later */
+}
+
+.container-services-main{
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+}
+
+.p-services-note{
+    margin: 2%;
+    text-align: center;
+}

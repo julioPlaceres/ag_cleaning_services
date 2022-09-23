@@ -1,10 +1,26 @@
-.container-contact{
-  padding-top: 150px;
+.container-contact-main{
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
   background-color: #54BAB9;
   font-weight: bold;
+  align-items: center;
 }
 
-#contact-title{
+#h6-contact-title{
   font-size: 50px;
   color: #f9f9f9;
+  text-align: center;
+}
+
+/* Sizing down */
+@media only screen and (max-width: 992px) {
+  #h6-contact-title{
+    font-size: 30px;
+  }
+}
+
+/* Sizing up */
+@media only screen and (min-width: 1200px) {
+
 }

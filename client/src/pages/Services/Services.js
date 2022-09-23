@@ -1,3 +1,4 @@
+import './Services.css';
 import { Container } from 'react-bootstrap';
 
 function Services() {
@@ -21,7 +22,6 @@ function Services() {
           <li>After construction cleaning</li>
           <li>Apartment cleaning</li>
           <li>Wash, dry and fold laundry</li>
-
           <li>Cleaning areas include:</li>
           <li>
             Closet, attic, garage, basement and cabinet cleaning/organization

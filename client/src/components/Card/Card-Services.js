@@ -3,29 +3,21 @@ import { Card, Button, Container, Row } from 'react-bootstrap';
 
 const CardServices = (props) => {
   return (
-    <Container fluid>
-      <Card
-        border="light"
-        style={{
-          maxWidth: '20rem',
-          borderRadius: '10px',
-          height: 'auto',
-          minHeight: '600px',
-        }}
-        className="mx-auto"
-      >
+    <Container fluid className="container-cardServices-main">
+      <Card border="light" className="card-cardServices">
         <Card.Img
+          className="img-cardServices"
           variant="top"
-          src={props.src}
           alt="card image"
-          style={{ maxWidth: '400px', padding: '0px' }}
+          src={props.src}
         />
-        <Card.Body className="flex-container card-body">
-          <Card.Title style={{ color: 'turquoise' }}> {props.title}</Card.Title>
-          <Card.Text className="card-text" style={{ color: 'black' }}>
+        <Card.Body className="flex-container">
+          <Card.Title className="title-cardServices-card">
             {' '}
-            {props.text}
-          </Card.Text>
+            {props.title}
+          </Card.Title>
+          <Card.Text className="card-text"> {props.text}</Card.Text>
+
           <Row className="flex-container card-buttons">
             <Button className="buttons" variant="info">
               {props.infoBtnText}

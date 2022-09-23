@@ -1,3 +1,4 @@
+/* Use in individual icons */
 .link-icons {
   text-decoration: none;
   color: lightseagreen;
@@ -8,11 +9,10 @@
 .content{
   display: flex;
   justify-content:left;
-  font-size: 4vw;
 }
 
 .span{
-  width: 10px;
+  /* width: 10px; */
 }
 
 @media only screen and (min-width: 576px) {
@@ -23,6 +23,6 @@
 
 @media only screen and (min-width: 768px) {
   .span{
-    width: 50px;
+    /* width: 50px; */
   }
 }
