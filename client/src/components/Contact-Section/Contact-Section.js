@@ -4,9 +4,9 @@ import OperationHours from '../Operation-Hours/OperationHours';
 
 const ContactSection = () => {
   return (
-    <Container fluid className="mt-5 container-contact">
+    <Container fluid className="mt-5 container-contact-main">
       
-      <h6 id='contact-title'> AG Organizing &amp; Cleaning Services LLC</h6>
+      <h6 id='h6-contact-title'> AG Organizing &amp; Cleaning Services LLC</h6>
       <OperationHours />
       
     </Container>

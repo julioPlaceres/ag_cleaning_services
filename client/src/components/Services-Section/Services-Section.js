@@ -8,15 +8,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 const ServicesSection = () => {
   return (
     <Container fluid>
-      <Row className="row-md" xs={12}>
-        <h6 className="mb-5 header-styling mt-5">
-          What's better than the fresh scent <br />
-          of a clean house?
-        </h6>
-      </Row>
-
       <Row>
-        <Col sm={12} md={6} lg={4}>
+        <Col sm={12} md={6} xl={4}>
           <CardServices
             title="Residential Cleaning"
             text="Feeling tired from a long day at work? Having visitors but you're too busy to prepare everything? Let us do the cleaning. Not only 
@@ -28,7 +21,7 @@ const ServicesSection = () => {
           />
         </Col>
 
-        <Col sm={12} md={6} lg={4}>
+        <Col sm={12} md={6} xl={4}>
           <CardServices
             title="Office &amp; workspace cleaning"
             text="Need help cleaning your business space? Don't let the dust and disorganization distract you from achieving your goals and your 
@@ -39,7 +32,7 @@ const ServicesSection = () => {
           />
         </Col>
 
-        <Col sm={12} md={12} lg={4}>
+        <Col sm={12} md={12} xl={4}>
           <CardServices
             title="General housekeeping"
             text="Deep Clean, organizing closets, attics, garages and basements. Interior or exterior window cleaning. Wash, dry and fold laundry.

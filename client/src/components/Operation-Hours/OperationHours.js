@@ -4,10 +4,13 @@ import { Container, Row, Table } from 'react-bootstrap';
 const OperationHours = () => {
   return (
     <Container fluid>
-      <Row> <p id='contact-hoursOperation'>Hours of Operation</p></Row>
+      <Row>
+        {' '}
+        <p id="p-operationHours">Hours of Operation</p>
+      </Row>
 
-      <Row className='row-operationHours-table'>
-        <Table borderless className='table-operationHours'>
+      <Row className="row-operationHours-table">
+        <Table borderless className="table-operationHours">
           <tbody>
             <tr>
               <td>Sunday</td>

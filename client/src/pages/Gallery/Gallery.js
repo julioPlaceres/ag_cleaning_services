@@ -1,6 +1,7 @@
+import './Gallery.css';
 import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
-import GalleryCard from '../components/card-gallery/card-gallery';
+import GalleryCard from '../../components/card-gallery/card-gallery';
 
 const Gallery = () => {
   const [images = [], setImage] = useState([]);
@@ -20,7 +21,7 @@ const Gallery = () => {
   };
 
   return (
-    <Container fluid className='container-gallery-main'>
+    <Container fluid className="container-gallery-main">
       {images.map((image) => {
         return (
           <GalleryCard key={image._id} src={image.image_url}></GalleryCard>

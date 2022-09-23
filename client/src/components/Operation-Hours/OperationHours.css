@@ -1,12 +1,12 @@
-#contact-hoursOperation{
-  font-size: 2rem;
+#p-operationHours{
+  font-size: 40px;
   color: #F9F9F9;
   text-align: center;
+  margin-top: 2%;
 }
 
 .row-operationHours-table{
-  font-size: 1.3rem;
-  padding-top: 50px;
+  font-size: 30px;
   justify-content: center;
 }
 
@@ -14,18 +14,23 @@
   color: #F9F9F9;
   text-align: center;
   max-width: 100%;
+  line-height: normal;
 }
 
-tbody > tr > td{
-  font-size: 1.3rem;
-}
-
+/* Sizing Down */
 @media only screen and (max-width: 360px) {
-  tbody > tr > td{
-    font-size: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  #p-operationHours{
+    font-size: 20px;
+  }
+  .row-operationHours-table{
+    font-size: 15px;
   }
 }
 
+/* Sizing up */
 @media only screen and (min-width: 576px) {
   .table-operationHours{
     max-width: 80%;
@@ -41,8 +46,5 @@ tbody > tr > td{
 @media only screen and (min-width: 1024px) {
   .table-operationHours{
     max-width: 50%;
-  }
-  tbody > tr > td{
-    font-size: 1.5rem;
   }
 }

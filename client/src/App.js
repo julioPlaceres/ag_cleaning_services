@@ -1,11 +1,11 @@
 import './App.css';
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Reviews from './pages/Reviews';
-import Contact from './pages/Contact';
-import NotFound from './pages/NotFound';
-import Gallery from './pages/Gallery';
+import Home from './pages//Home/Home';
+import About from './pages/About/About';
+import Services from './pages/Services/Services';
+import Reviews from './pages/Reviews/Reviews';
+import Contact from './pages/Contact/Contact';
+import NotFound from './pages/NotFound/NotFound';
+import Gallery from './pages/Gallery/Gallery';
 import Navigation from './components/Navbar/Navbar';
 import ContactFooter from './components/Contact-Section/Contact-Section';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
