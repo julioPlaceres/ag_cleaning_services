@@ -1,6 +1,5 @@
 import './Card-Services.css';
 import { Card, Button, Container, Row, React } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 const CardServices = (props) => {
   return (
@@ -20,14 +19,14 @@ const CardServices = (props) => {
           <Card.Text className="card-text"> {props.text}</Card.Text>
 
           <Row className="flex-container card-buttons">
-            <Link to="/services">
-            <Button className="buttons" variant="info">
+
+            <Button className="buttons" variant="info" href="/services">
               {props.infoBtnText}
             </Button>
-            <Button className="buttons" variant="warning">
+            <Button className="buttons" variant="warning" href="/gallery">
               {props.warningBtnText}
             </Button>
-            </Link>
+
           </Row>
         </Card.Body>
       </Card>
