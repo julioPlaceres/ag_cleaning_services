@@ -68,6 +68,7 @@
 
   .buttons {
     margin-bottom: 0;
+    margin-right: 15px;
     max-width: 125px;
   }
 }
