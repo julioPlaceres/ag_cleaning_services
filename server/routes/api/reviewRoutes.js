@@ -1,10 +1,13 @@
 const router = require("express").Router();
 const Review = require("../../models/Review");
 
-// GET all Reviews
+// GET all Reviews (update to pass param)
 router.get("/", (req, res) => {
+  let limit = req.query.limit;
+  
   Review.find({})
     .sort({ review_date: -1 })
+    .limit(limit)
     .then((dbReview) => {
       res.json(dbReview);
     })

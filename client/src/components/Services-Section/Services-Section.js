@@ -1,5 +1,6 @@
 import './Services-Section.css';
 import CardServices from '../Card/Card-Services';
+import Reviews from '../Reviews/Reviews';
 import painting01 from '../images/Cleaning01.jpg';
 import painting02 from '../images/Cleaning02.jpg';
 import painting03 from '../images/Cleaning03.jpg';
@@ -42,6 +43,9 @@ const ServicesSection = () => {
             src={painting03}
           />
         </Col>
+      </Row>
+      <Row>
+        <Reviews/>
       </Row>
     </Container>
   );
