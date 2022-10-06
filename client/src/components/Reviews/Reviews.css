@@ -1,0 +1,13 @@
+.container-reviews-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.row-reviews-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
