@@ -10,13 +10,17 @@
 }
 
 .h6-hero-title{
-  background-color: black;
   margin-top: 5%;
   margin-bottom: 5%;
   color: #54bab9;
   font-weight: bold;
   text-align: center;
   font-size: 7vw;
+}
+
+.particles-home-container{
+  width: auto;
+  height: auto;
 }
 
 /* Sizing down */
