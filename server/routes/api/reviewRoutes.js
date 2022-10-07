@@ -3,11 +3,9 @@ const Review = require("../../models/Review");
 
 // GET all Reviews (update to pass param)
 router.get("/", (req, res) => {
-  let limit = req.query.limit;
-  
   Review.find({})
     .sort({ review_date: -1 })
-    .limit(limit)
+    .limit(5)
     .then((dbReview) => {
       res.json(dbReview);
     })

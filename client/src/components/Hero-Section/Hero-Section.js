@@ -8,11 +8,13 @@ const HeroSection = () => {
     <Container fluid className="container-hero-main">
       <Image fluid src={Img1} alt="Company Logo" className="image-hero-logo" />
 
-      <h6 className="h6-hero-title">
-        <Particle />
-        What's better than the fresh scent <br />
-        of a clean house?
-      </h6>
+      <div className="particles-home-container">
+        <h6 className="h6-hero-title">
+          <Particle />
+          What's better than the fresh scent <br />
+          of a clean house?
+        </h6>
+      </div>
     </Container>
   );
 };

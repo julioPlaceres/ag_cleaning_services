@@ -14,7 +14,6 @@ const Reviews = () => {
     return new Date(date).toLocaleDateString('en-gb');
   };
 
-  //Modify to specified how many Reviews are to be displayed and pass that number as a prop
   const fetchReviews = () => {
     fetch('api/reviews/')
       .then((response) => {
@@ -28,6 +27,7 @@ const Reviews = () => {
   return (
     <Container fluid className="container-reviews-main">
       <Row className="row-reviews-cards">
+        <h5 className="mt-5 mb-3">What others say about us</h5>
         {renderReview.map((review) => {
           return (
             <ReviewCard

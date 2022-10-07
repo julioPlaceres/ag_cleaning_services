@@ -1,7 +1,7 @@
 #tsparticles {
-    position: fixed !important;
-    background-repeat: no-repeat !important;
+    position: absolute;
+    background-repeat: no-repeat;
     background-size:auto;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
   }
