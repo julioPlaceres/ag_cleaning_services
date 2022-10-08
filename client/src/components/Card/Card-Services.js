@@ -19,14 +19,12 @@ const CardServices = (props) => {
           <Card.Text className="card-text"> {props.text}</Card.Text>
 
           <Row className="flex-container card-buttons">
-
             <Button className="buttons" variant="info" href="/services">
               {props.infoBtnText}
             </Button>
             <Button className="buttons" variant="warning" href="/gallery">
               {props.warningBtnText}
             </Button>
-
           </Row>
         </Card.Body>
       </Card>
