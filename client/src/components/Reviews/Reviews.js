@@ -26,7 +26,9 @@ const Reviews = () => {
 
   return (
     <>
-      <h5 className="mt-5 mb-3 header-reviews-home">What others say about us</h5>
+      <h5 className="mt-5 mb-3 header-reviews-home">
+        What others say about us
+      </h5>
       {renderReview.map((review, index) => {
         const even = index % 2 === 0;
         return (
@@ -40,7 +42,7 @@ const Reviews = () => {
                     review_text={review.review_text}
                     review_date={setDate(review.review_date)}
                     headerClassName="card-review-header1"
-                    cardClassName="card-review-container card-review-even"
+                    cardClassName="card-review-container card-review-even card-reviews-load"
                   />
                 </Row>
               </Container>
