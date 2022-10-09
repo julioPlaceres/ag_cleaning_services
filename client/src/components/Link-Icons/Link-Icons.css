@@ -3,7 +3,7 @@
   text-decoration: none;
   color: lightseagreen;
   font-weight: bold;
-  width:max-content;
+  font-size: xx-small;
 }
 
 .content{
@@ -12,17 +12,18 @@
 }
 
 .span{
-  /* width: 10px; */
+  width: 10px;
 }
 
-@media only screen and (min-width: 576px) {
-  .content{
-    font-size: 20px;
+/* Sizing up */
+@media only screen and (min-width: 430px) {
+  .link-icons{
+    font-size: x-small;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .span{
-    /* width: 50px; */
+@media only screen and (min-width: 1250px) {
+  .link-icons{
+    font-size: medium;
   }
 }
