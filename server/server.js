@@ -14,10 +14,7 @@ app.use(logger('dev'));
 // Express middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-app.get('*', function (req, res) {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
+app.use(express.static(path.join(__dirname, 'public')));
 
 // turn on routes
 app.use(routes);
