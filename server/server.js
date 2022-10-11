@@ -19,8 +19,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 if (process.env.NODE_ENV === 'production') {
-  console.log(path.join(__dirname, 'public'));
-  app.use(express.static(path.join(__dirname, 'public')));
+  console.log(path.join(__dirname, '../build'));
+  app.use(express.static(path.join(__dirname, '../build')));
 }
 
 app.listen(PORT, () => {
