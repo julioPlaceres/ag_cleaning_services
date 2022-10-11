@@ -17,17 +17,17 @@ app.use(express.urlencoded({ extended: true }));
 
 console.log(`Check node env: ${process.env.NODE_ENV}`);
 
+// turn on routes
+app.use(routes);
+
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('build'));
 
   app.get('*', (req, res) => {
-    console.log(path.resolve(__dirname, 'client', 'index.html'));
-    res.sendFile(path.resolve(__dirname, 'client', 'index.html'));
+    console.log(path.resolve(__dirname, 'build', 'index.html'));
+    res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
   });
 }
-
-// turn on routes
-app.use(routes);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}!`);
