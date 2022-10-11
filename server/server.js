@@ -15,18 +15,11 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-console.log(`Check node env: ${process.env.NODE_ENV}`);
-
 // turn on routes
 app.use(routes);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('build'));
-
-  app.get('*', (req, res) => {
-    console.log(path.resolve(__dirname, 'build', 'index.html'));
-    res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
-  });
 }
 
 app.listen(PORT, () => {
