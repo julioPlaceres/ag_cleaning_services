@@ -18,12 +18,15 @@ app.use(express.urlencoded({ extended: true }));
 console.log(`Check node env: ${process.env.NODE_ENV}`);
 
 if (process.env.NODE_ENV === 'production') {
-  console.log(`Serving files at: ${path.join(__dirname, '../client/build')}`);
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
 
 // turn on routes
 app.use(routes);
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}!`);
