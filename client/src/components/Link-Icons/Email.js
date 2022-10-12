@@ -3,9 +3,9 @@ import { MdEmail } from 'react-icons/md';
 
 const Email = () => {
   return (
-    <a href="mailto:agarcia@gmail.com" className="link-icons">
+    <a href="mailto:ariadnagarcia522@outlook.com" className="link-icons">
       <MdEmail />
-      agarcia@gmail.com
+      Email us!
     </a>
   );
 };
