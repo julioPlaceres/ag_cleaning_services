@@ -1,6 +1,6 @@
 import './ReviewForm.css';
 import React, { useState, useEffect } from 'react';
-import { Container, Form, Button, Row, Col } from 'react-bootstrap';
+import { Container, Form, Button, Row } from 'react-bootstrap';
 import Alerts from '../Alerts/Alert';
 import ReviewCard from '../reviews-card/reviewCard';
 
