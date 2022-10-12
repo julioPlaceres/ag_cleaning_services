@@ -19,8 +19,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 if (process.env.NODE_ENV === 'production') {
-  console.log(`path1: ${path.join(__dirname, '../client/build')}`)
-  console.log(`path2: ${path.join(__dirname, '../client/build/index.html')}`)
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
 

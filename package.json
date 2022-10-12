@@ -1,5 +1,5 @@
 {
-  "name": "ag_cleaning_services",
+  "name": "ag_org_cleaning_services",
   "version": "0.1.0",
   "description": "",
   "main": "server/server.js",
@@ -12,7 +12,7 @@
     "build": "cd client && npm run build"
   },
   "keywords": [],
-  "author": "",
+  "author": "JW Cipher",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.2.0",
