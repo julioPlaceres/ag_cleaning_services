@@ -1,7 +1,7 @@
 {
-  "short_name": "AG Cleaning",
-  "name": "AG Cleaning Services",
-  "start_url": ".",
+  "short_name": "AG Organizing And Cleaning Services",
+  "name": "AG Organizing And Cleaning Services",
+  "start_url": "https://www.agocservices.com",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
