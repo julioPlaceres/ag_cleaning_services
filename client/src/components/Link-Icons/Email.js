@@ -5,7 +5,7 @@ const Email = () => {
   return (
     <a href="mailto:ariadnagarcia522@outlook.com" className="link-icons">
       <MdEmail />
-      Email us!
+      Get an estimate
     </a>
   );
 };
