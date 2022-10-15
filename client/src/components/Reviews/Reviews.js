@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Container, Row } from 'react-bootstrap';
 import ReviewCard from '../reviews-card/reviewCard';
+import TeamSpirit from '../images/TeamSpirit.gif';
 
 const Reviews = () => {
   const [renderReview, setRenderedReviews] = useState([]);
@@ -31,9 +32,12 @@ const Reviews = () => {
 
   return (
     <>
-      <h5 className="mt-5 mb-3 header-reviews-home">
-        What others say about us
-      </h5>
+      <div className="teamImg-container">
+        <h5 className="mt-5 mb-3 header-reviews-home">
+          What others say about us
+        </h5>
+        <img className='imgTeam' src={TeamSpirit} alt="Team Spirit"></img>
+      </div>
       {renderReview.map((review, index) => {
         const even = index % 2 === 0;
         return (
