@@ -43,6 +43,25 @@ const OperationHours = () => {
           </tbody>
         </Table>
       </Row>
+
+      <p
+        style={{
+          display: 'flex',
+          color: 'white',
+          fontSize: '17px',
+          justifyContent: 'space-around',
+        }}
+      >
+        <a
+          href="https://github.com/julioPlaceres"
+          aria-label="link-to-github"
+          target="_blank"
+          rel="noreferrer"
+          style={{ color: 'white', textDecoration: 'none' }}
+        >
+          Created by JW Cipher 2022 💖
+        </a>
+      </p>
     </Container>
   );
 };

@@ -1,3 +1,15 @@
+.teamImg-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imgTeam{
+  width: 30vw;
+  min-width: 300px;
+}
+
 .container-reviews-main1 {
     display: flex;
     align-items: flex-start;
@@ -46,6 +58,10 @@
     text-align: center;
     font-size: 4vw;
   }
+
+  .teamImg-container{
+    flex-direction: row;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -57,7 +73,7 @@
 
 .cardAnimation1 {
   position: relative;
-  animation: myfirst 2s;
+  animation: myfirst 1s;
   animation-direction: alternate-reverse;
 }
 
@@ -69,7 +85,7 @@
 
 .cardAnimation2 {
   position: relative;
-  animation: mysecond 2s;
+  animation: mysecond 1s;
   animation-direction: alternate-reverse;
 }
 
