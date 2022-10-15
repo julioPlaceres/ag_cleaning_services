@@ -55,8 +55,26 @@
   }
 }
 
-@keyframes card-reviews-load {
-  0% { opacity: 0; transform: translateX(-100px); }
-  50% { opacity: 0.5; transform: translateX(-50px); }
-  100% { opacity: 1; transform: translateX(0); }
+.cardAnimation1 {
+  position: relative;
+  animation: myfirst 2s;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes myfirst {
+  0%   { left: 0;}
+  50%   { left: 50%;}
+  100% { left: 0;}
+}
+
+.cardAnimation2 {
+  position: relative;
+  animation: mysecond 2s;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes mysecond {
+  0%   { right: 0;}
+  50%   { right: 50%;}
+  100% { right: 0;}
 }
