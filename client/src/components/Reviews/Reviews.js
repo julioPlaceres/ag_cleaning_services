@@ -1,10 +1,15 @@
 import './Reviews.css';
 import React, { useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import { Container, Row } from 'react-bootstrap';
 import ReviewCard from '../reviews-card/reviewCard';
 
 const Reviews = () => {
   const [renderReview, setRenderedReviews] = useState([]);
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    rootMargin: '80%',
+  });
 
   useEffect(() => {
     fetchReviews();
@@ -32,35 +37,43 @@ const Reviews = () => {
       {renderReview.map((review, index) => {
         const even = index % 2 === 0;
         return (
-          <>
+          <div key={review._id}>
             {even ? (
-              <Container fluid className="container-reviews-main1">
+              <Container
+                ref={ref}
+                fluid
+                className={`container-reviews-main1 ${
+                  inView ? ' cardAnimation1' : ' none'
+                }`}
+              >
                 <Row className="row-reviews-cards">
                   <ReviewCard
-                    key={review._id}
                     review_name={review.review_name}
                     review_text={review.review_text}
                     review_date={setDate(review.review_date)}
                     headerClassName="card-review-header1"
-                    cardClassName="card-review-container card-review-even card-reviews-load"
                   />
                 </Row>
               </Container>
             ) : (
-              <Container fluid className="container-reviews-main2">
+              <Container
+                ref={ref}
+                fluid
+                className={`container-reviews-main2 ${
+                  inView ? ' cardAnimation2' : ' none'
+                }`}
+              >
                 <Row className="row-reviews-cards">
                   <ReviewCard
-                    key={review._id}
                     review_name={review.review_name}
                     review_text={review.review_text}
                     review_date={setDate(review.review_date)}
                     headerClassName="card-review-header2"
-                    cardClassName="card-review-container card-review-odd"
                   />
                 </Row>
               </Container>
             )}
-          </>
+          </div>
         );
       })}
     </>
