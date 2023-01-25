@@ -1,5 +1,5 @@
 import './card-gallery.css';
-import placeHolderImg from '../images/placeHolderImg.png';
+import placeHolderImg from '../images/placeHolderImg.webp';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const GalleryCard = (props) => {

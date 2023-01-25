@@ -1,15 +1,17 @@
 import './Services-Section.css';
 import CardServices from '../Card/Card-Services';
-import painting01 from '../images/Cleaning01.jpg';
-import painting02 from '../images/Cleaning02.jpg';
-import painting03 from '../images/Cleaning03.jpg';
+import painting01 from '../images/Cleaning01.webp';
+import painting02 from '../images/Cleaning02.webp';
+import painting03 from '../images/Cleaning03.webp';
 import { Container, Row, Col } from 'react-bootstrap';
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
 
 const ServicesSection = () => {
   return (
     <Container fluid>
       <Row>
         <Col sm={12} md={6} xl={4}>
+          <LazyLoadComponent>
           <CardServices
             title="Residential Cleaning"
             text="Feeling tired from a long day at work? Having visitors but you're too busy to prepare everything? Let us do the cleaning. Not only 
@@ -19,9 +21,11 @@ const ServicesSection = () => {
             warningBtnText="See Gallery"
             src={painting01}
           />
+          </LazyLoadComponent>
         </Col>
 
         <Col sm={12} md={6} xl={4}>
+        <LazyLoadComponent>
           <CardServices
             title="Office &amp; workspace cleaning"
             text="Need help cleaning your business space? Don't let the dust and disorganization distract you from achieving your goals and your 
@@ -30,9 +34,11 @@ const ServicesSection = () => {
             warningBtnText="See Gallery"
             src={painting02}
           />
+          </LazyLoadComponent>
         </Col>
 
         <Col sm={12} md={12} xl={4}>
+          <LazyLoadComponent>
           <CardServices
             title="General housekeeping"
             text="Deep Clean, organizing closets, attics, garages and basements. Interior or exterior window cleaning. Wash, dry and fold laundry.
@@ -41,6 +47,7 @@ const ServicesSection = () => {
             warningBtnText="See Gallery"
             src={painting03}
           />
+          </LazyLoadComponent>
         </Col>
       </Row>
     </Container>
