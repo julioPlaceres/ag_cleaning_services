@@ -1,8 +1,8 @@
 import './Services-Section.css';
 import CardServices from '../Card/Card-Services';
-import painting01 from '../images/Cleaning01.webp';
-import painting02 from '../images/Cleaning02.webp';
-import painting03 from '../images/Cleaning03.webp';
+import painting01 from '../images/Cleaning01-small.webp';
+import painting02 from '../images/Cleaning02-small.webp';
+import painting03 from '../images/Cleaning03-small.webp';
 import { Container, Row, Col } from 'react-bootstrap';
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
 

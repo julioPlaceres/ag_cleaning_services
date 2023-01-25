@@ -1,14 +1,12 @@
 import './Hero-Section.css';
-import Img1 from '../images/heroImg.webp';
+import Img1 from '../images/heroImg-small.webp';
 import Particle from '../Particles/Particle';
-import { Container } from 'react-bootstrap';
-import MyImage from '../images/lazyLoad';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { Container, Image } from 'react-bootstrap';
 
 const HeroSection = () => {
   return (
     <Container fluid className="container-hero-main">
-      <MyImage src={Img1} alt="Company Logo" className="image-hero-logo" effect="blur" height="auto" width="auto"/>
+      <Image fluid src={Img1} alt="Company Logo" className="image-hero-logo" />
 
       <div className="particles-home-container">
         <h6 className="h6-hero-title">
