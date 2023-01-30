@@ -1,11 +1,8 @@
 const AWS = require('aws-sdk');
 const router = require('express').Router();
-const Gallery = require('../../models/Gallery');
-const Seeder = require('../../seeders/UpdateDb');
 
 // Placeholders for the data
 let awsData = [];
-let dbData = [];
 
 // Initialize the Amazon Cognito credentials provider
 AWS.config.region = process.env.AWS_REGION;
@@ -19,30 +16,12 @@ var s3 = new AWS.S3({
   params: { Bucket: process.env.BUCKET_NAME },
 });
 
-// Gets the request and checks if the Db needs to be updated
+// Gets the request and pulls all objects in the bucket
 router.get('/', (req, res) => {
-  const needsUpdate = CheckCount(awsData.length, dbData.length);
-  console.log(
-    `awsData.length: ${awsData.length}, dbData.length: ${dbData.length}`
-  );
-  if (needsUpdate) {
-    // Update DB if count does not match
-    console.log('Seeding Test');
-    Seeder();
-    res.json(dbData);
-  } else {
-    // Send the DB Request to front End
-    res.json(dbData);
-  }
+  res.json(awsData);
 });
 
-const CheckCount = (awsCount, dbCount) => (awsCount != dbCount ? true : false);
-
-(async function () {
-  // Returns a JSON object with all the data from the MongoDb Collection
-  const dbResponse = await Gallery.find({});
-  dbData = await dbResponse;
-
+(async function ObjectList() {
   // Returns a Object with all the Metadata from the objects in the S3 bucket
   AWS.config.setPromisesDependency();
   const awsResponse = await s3

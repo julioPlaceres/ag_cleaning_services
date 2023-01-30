@@ -12,6 +12,7 @@ const GalleryCard = (props) => {
         src={props.src}
         placeholderSrc={placeHolderImg}
         effect="blur"
+        onClick={props.onClick}
       />
     </div>
   );

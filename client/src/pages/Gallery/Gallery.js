@@ -5,6 +5,9 @@ import GalleryCard from '../../components/card-gallery/card-gallery';
 
 const Gallery = () => {
   const [images = [], setImage] = useState([]);
+  const [display, setDisplay] = useState(false);
+  const [imgId, setImgId] = useState("");
+  const url = "https://agcleaningservices.s3.amazonaws.com/"
 
   useEffect(() => {
     fetchImages();
@@ -20,15 +23,28 @@ const Gallery = () => {
       });
   };
 
-  return (
-    <Container fluid className="container-gallery-main">
-      {images.map((image) => {
-        return (
-          <GalleryCard key={image._id} src={image.image_url}></GalleryCard>
-        );
-      })}
-    </Container>
-  );
+  const handleClick = (e) => {
+    e.preventDefault();
+    let splitSrc = e.target.attributes[2].value.toString().split("com/");
+    setImgId(splitSrc[1]);
+    setDisplay(true);
+  }
+
+  if (display === false) {
+    return (
+      <Container fluid className="container-gallery-main">
+        {images.map((image) => { 
+          return (
+          <GalleryCard key={image.Key} src={url + image.Key} onClick={handleClick}></GalleryCard>);
+              })}
+      </Container>
+    );
+  } else {
+    return(
+      <Container fluid className="container-gallery-main">
+          <GalleryCard key={imgId} src={url + imgId}></GalleryCard>
+      </Container>
+  )};
 };
 
 export default Gallery;
