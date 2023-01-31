@@ -1,6 +1,6 @@
 import './Gallery.css';
 import React, { useState, useEffect } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Image } from 'react-bootstrap';
 import GalleryCard from '../../components/card-gallery/card-gallery';
 import ModalDefault from '../../components/Modal/modal_default';
 
@@ -23,6 +23,7 @@ const Gallery = () => {
       })
       .then((data) => {
         setImage(data);
+        console.log(data);
       });
   };
 
@@ -38,8 +39,11 @@ const Gallery = () => {
       <ModalDefault
         show={show}
         handleClose={handleClose}
-        title="Test"
-        img={<GalleryCard key={imgId} src={url + imgId} />}
+        img={
+        <Image fluid
+        key={imgId} 
+        src={url + imgId} />
+      }
       />
 
       {images.map((image) => {
